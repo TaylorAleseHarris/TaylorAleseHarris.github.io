@@ -1,0 +1,68 @@
+/*Taylor Harris 10/29/2021*/
+.google {
+    font-family: 'Righteous', serif;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/quicksand-regular-webfont.woff') format('woff'),
+         url('../fonts/quicksand-regular-webfont.woff2') format('woff2');
+}
+
+#outerwrapper {
+    width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+} 
+
+.floatleft { 
+   float: left;
+   margin-right: 3%;
+}
+
+.floatright {
+   float: right;
+   margin-left: 3%;
+}
+
+body {
+	background-color: #B8D1EB;
+	color: #000000;
+	font-family:'Times New Roman', Times, serif;
+}
+
+main, footer { 
+   clear: both;
+}
+
+h1 {
+	font-family: 'Righteous', serif;
+	font-size: 60px;
+}
+
+h2 {
+	font-family: 'Quicksand', serif;
+	font-weight: bold;
+	font-style: italic;
+}
+
+nav ul li {
+	list-style: none;
+}
+main {
+	background-color: #C5A98B;
+	padding: 10px;
+}
+
+main ul li {
+	list-style-image: url('../images/tomato_20x20.png')
+}
+
+footer {
+	font-size: .75em;
+	text-align: center;
+	padding: 10px 0px 10px 0px;
+	background-color: rgb(233, 231, 107);
+}
+
+
