@@ -1,0 +1,83 @@
+/* Style Sheet If You Build It (table), They Will Come */
+/* Name: Taylor Harris 11/4/2021                       */
+
+/* Gradient target HTML body element tag */
+body {
+    background-image: linear-gradient(to right, #64e2e6, #ec73be);
+}
+
+/* css target tableStyle class in HTML */
+.tableStyle {
+    border: 5px solid #64e2e6;
+    border-width: 10px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+td, th {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: left;
+}
+
+/* css target HTML Table caption tag */
+caption {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+
+/* css target HTML Table thead tag */
+ 
+ 
+ 
+/* css target HTML Table tfoot tag */
+tfoot {
+    text-align: center;
+}
+ 
+ 
+/* Add a pseudo-class selector (page 320) */
+/* For example --  :nth-child(even)       */
+
+/*TABLE 1*/
+/*Row 1*/
+.tableStyle tbody tr:nth-child(2) td:nth-child(2)
+{
+background-color: #ec73be;
+}
+.tableStyle tbody tr:nth-child(2) td:nth-child(1)
+{
+background-color: #ec73be;
+}
+.tableStyle tbody tr:nth-child(2) td:nth-child(3)
+{
+background-color: #807a8b;
+}
+.tableStyle tbody tr:nth-child(2) td:nth-child(4)
+{
+background-color: #807a8b;
+}
+/*End Row 1*/
+/*Row 3*/
+.tableStyle tbody tr:nth-child(4) td:nth-child(2)
+{
+background-color: #ec73be;
+}
+.tableStyle tbody tr:nth-child(4) td:nth-child(1)
+{
+background-color: #ec73be;
+}
+.tableStyle tbody tr:nth-child(4) td:nth-child(3)
+{
+background-color: #807a8b;
+}
+.tableStyle tbody tr:nth-child(4) td:nth-child(4)
+{
+background-color: #807a8b;
+}
+/*End Row 3*/
+ 
+/* use colgroup */
+/* Week 3, Wednesday Video Lesson Chapter 8 folder - Table Column Group, page 173 */
