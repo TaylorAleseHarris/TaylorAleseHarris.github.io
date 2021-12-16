@@ -1,0 +1,998 @@
+/*--------------------------------------------------------------
+  # Body
+  --------------------------------------------------------------*/
+    /**
+  * Mobile Body 
+  */
+  /*@media (max-width: 640px) {
+    .element {
+      display: inline-block;
+      width: 100%;
+    }*/
+
+/*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+  #header {
+    z-index: 997;
+    transition: all 0.5s;
+    height: 80px;
+    background: rgba(25, 28, 31, 0.8);
+  }
+  #header.header-transparent {
+    background: transparent;
+  }
+  #header.header-scrolled {
+    height: 60px;
+    background: rgba(25, 28, 31, 0.8);
+  }
+
+    /**
+  * Mobile Header 
+  */
+  /*@media (max-width: 640px) {
+    .header {
+      display: inline-block;
+      width: 100%;
+    }*/
+  
+  /*--------------------------------------------------------------
+  # Navigation Menu
+  --------------------------------------------------------------*/
+  /**
+  * Desktop Navigation 
+  */
+  .navbar {
+    padding: 0;
+  }
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  .navbar li {
+    position: relative;
+  }
+  .navbar a, .navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    color: #ffffff;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 12px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .navbar a i, .navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+  }
+  .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+    color: #8d8d8d; 
+  }
+  .navbar .dropdown ul {
+    display: block;
+    position: absolute;
+    left: 14px;
+    top: calc(100% + 30px);
+    margin: 0;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+    border-radius: 4px;
+  }
+  .navbar .dropdown ul li {
+    min-width: 200px;
+  }
+  .navbar .dropdown ul a {
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: none;
+    font-weight: 400;
+    color: #3b434a;
+    letter-spacing: 1px;
+  }
+  .navbar .dropdown ul a i {
+    font-size: 12px;
+  }
+  .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+    color: #353535;
+  }
+  .navbar .dropdown:hover > ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+  }
+  .navbar .dropdown .dropdown ul {
+    top: 0;
+    left: calc(100% - 30px);
+    visibility: hidden;
+  }
+  .navbar .dropdown .dropdown:hover > ul {
+    opacity: 1;
+    top: 0;
+    left: 100%;
+    visibility: visible;
+  }
+  @media (max-width: 1366px) {
+    .navbar .dropdown .dropdown ul {
+      left: -90%;
+    }
+    .navbar .dropdown .dropdown:hover > ul {
+      left: -100%;
+    }
+  }
+  
+  /**
+  * Mobile Navigation 
+  */
+  .mobile-nav-toggle {
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    line-height: 0;
+    transition: 0.5s;
+  }
+  
+  @media (max-width: 991px) {
+    .mobile-nav-toggle {
+      display: block;
+    }
+  
+    .navbar ul {
+      display: none;
+    }
+  }
+  .navbar-mobile {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(36, 41, 46, 0.9);
+    transition: 0.3s;
+    z-index: 999;
+  }
+  .navbar-mobile .mobile-nav-toggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  .navbar-mobile ul {
+    display: block;
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    padding: 10px 0;
+    border-radius: 10px;
+    background-color: #fff;
+    overflow-y: auto;
+    transition: 0.3s;
+  }
+  .navbar-mobile a, .navbar-mobile a:focus {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #353535;
+  }
+  .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+    color: #353535;
+  }
+  .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
+    margin: 15px;
+  }
+  .navbar-mobile .dropdown ul {
+    position: static;
+    display: none;
+    margin: 10px 20px;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 1;
+    visibility: visible;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  }
+  .navbar-mobile .dropdown ul li {
+    min-width: 200px;
+  }
+  .navbar-mobile .dropdown ul a {
+    padding: 10px 20px;
+  }
+  .navbar-mobile .dropdown ul a i {
+    font-size: 12px;
+  }
+  .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
+    color: #353535;
+  }
+  .navbar-mobile .dropdown > .dropdown-active {
+    display: block;
+  }
+  
+  /*--------------------------------------------------------------
+  # Hero Section
+  --------------------------------------------------------------*/
+  #hero {
+    width: 100%;
+    height: 100vh;
+    background: url("../images/SnowyMountain.jpg") top right;
+    background-size: cover;
+    position: relative;
+  }
+  #hero:before {
+    content: "";
+    background: rgba(143, 143, 143, 0.281);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  #hero .hero-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 15px;
+  }
+  #hero .logo {
+    height: 400px;
+  }
+  #hero .btn-scroll {
+    transition: 0.4s;
+    color: rgba(255, 255, 255, 0.6);
+    animation: up-down 1s ease-in-out infinite alternate-reverse both;
+  }
+  #hero .btn-scroll i {
+    font-size: 48px;
+  }
+  #hero .btn-scroll:hover {
+    color: #353535;
+  }
+  @media (min-width: 1024px) {
+    #hero {
+      background-attachment: fixed;
+    }
+  }
+  @media (max-width: 575px) {
+    #hero h1 {
+      font-size: 40px;
+    }
+    #hero h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+  
+  @-webkit-keyframes up-down {
+    0% {
+      transform: translateY(5px);
+    }
+    100% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  @keyframes up-down {
+    0% {
+      transform: translateY(5px);
+    }
+    100% {
+      transform: translateY(-5px);
+    }
+  }
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #3b434a;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.4s;
+  }
+  .back-to-top i {
+    font-size: 28px;
+    color: #fff;
+    line-height: 0;
+  }
+  .back-to-top:hover {
+    background: #d8d8d8;
+    color: #fff;
+  }
+  .back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  /*--------------------------------------------------------------
+# Main
+--------------------------------------------------------------*/
+
+main {
+    background-color: #eef0f2;
+}
+
+  /*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+    padding: 60px 0;
+  }
+  
+  .section-bg {
+    background-color: white;
+  }
+  
+  .section-title {
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+  }
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    color: #3b434a;
+    position: relative;
+    z-index: 2;
+  }
+
+  .section-title h2 a:hover {
+      color: #487058;
+  }
+  
+  .section-title h2 a:visited {
+      color: #3b434a;
+  }
+
+  .section-title h2 a:active {
+    color: #3b434a;
+  }
+
+  .section-title h2.active a {
+    color: #3b434a;
+  }
+
+  .section-title span {
+    position: relative;
+    top: 30px;  
+    color: #d8d8d8;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 52px;
+    text-transform: uppercase;
+    line-height: 0;
+  }
+  .section-title p {
+    margin-bottom: 0;
+    position: relative;
+    z-index: 2;
+  }
+
+  .section-title .my-photo {
+    transform: rotate(355deg);
+    float: left;
+  }
+
+        /**
+  * Mobile Section 
+  */
+
+  /*@media (max-width: 640px) {
+    .section-title h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+    .section-title span {
+      font-size: 38px;
+    }
+    .section {
+      display: inline-block;
+      width: 100%;
+    }
+  }*/
+  
+  /*--------------------------------------------------------------
+  # Breadcrumbs
+  --------------------------------------------------------------*/
+  .breadcrumbs {
+    padding: 20px 0;
+    background-color: #f4f5f6;
+    min-height: 40px;
+    margin-top: 78px;
+  }
+  @media (max-width: 992px) {
+    .breadcrumbs {
+      margin-top: 60px;
+    }
+  }
+  .breadcrumbs h2 {
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0;
+  }
+  @media (max-width: 992px) {
+    .breadcrumbs h2 {
+      margin: 0 0 10px 0;
+    }
+  }
+  .breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+  }
+  .breadcrumbs ol li + li {
+    padding-left: 10px;
+  }
+  .breadcrumbs ol li + li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: #6c757d;
+    content: "/";
+  }
+  @media (max-width: 768px) {
+    .breadcrumbs .d-flex {
+      display: block !important;
+    }
+    .breadcrumbs ol {
+      display: block;
+    }
+    .breadcrumbs ol li {
+      display: inline-block;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Meet Me
+  --------------------------------------------------------------*/
+  
+  .meet .content h3 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #3b434a;
+    text-transform: uppercase;
+  }
+
+  .meet .my-photo {
+    float: left;
+    margin-left: 5%;
+  }
+
+   .container {
+    position: relative;
+  }
+
+   .fern {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    transform: rotate(275deg);
+  }
+
+   .fern2 {
+    position: absolute;
+    transform: scaleX(-1);
+    top: 325px;
+    right: 600px; /*left: 50deg*/
+    transform: rotate(95deg); /*300deg*/
+  }
+
+  .google-bold {
+      font-family: "Caveat", serif;
+      font-weight: 700;
+      font-size: 20px;
+      float: right;
+      margin-top: 1%;
+      margin-left: 15%;
+      position: absolute;
+  }
+
+  .google-light {
+    font-family: "Caveat", serif;
+    font-weight: 400;
+    font-size: 19px;
+    text-align: justify;
+    margin-top: 10%;
+    margin-right: 3%;
+  }
+
+  .flip-card-container {
+    /*height: 300px;
+    width: 250px;*/
+    perspective: 1000px;
+    float: left;
+    margin-left: 5%;
+    margin-top: 3%;
+  }
+  .flip-card {
+    position: relative;
+    height: 300px;
+    width: 250px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  .flip-card-container:hover .flip-card {
+    transform: rotateY(180deg); /* <=>  rotateY(.5turn) */
+  }
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    height: 300px;
+    width: 250px;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 0.5rem; */
+  }
+  .flip-card-front {
+    color: #fff;
+  }
+  .flip-card-back {
+    color: #fff;
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front img {
+    height: 300px;
+    width: 250px;
+    /* border-radius: 0.5rem; */
+  }
+  .flip-card-back p {
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    color: black;
+  }
+
+    /**
+  * Mobile Meet Me 
+  */
+
+   @media (max-width: 640px) {
+    .meet .google-light {
+      margin-left: 10px;
+      margin-right: 10px;
+      float: left;
+    }
+    
+    .meet .fern {
+        visibility: hidden;
+    }
+
+    .meet .flip-card {
+      margin-left: 40%;
+    }
+  }
+  /*--------------------------------------------------------------
+# Investment
+--------------------------------------------------------------*/
+.investment .icon-box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    border: 1px solid #fff;
+  }
+  .investment .icon {
+    margin: 0 auto 20px auto;
+    padding-top: 17px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+    background: #ffffff;
+  }
+  .investment .icon i {
+    font-size: 36px;
+    line-height: 1;
+    color: 3b434a;
+  }
+  .investment .title {
+    font-weight: 650;
+    margin-bottom: 15px;
+    font-size: 17px;
+  }
+  .investment .title a {
+    color: #3b434a;
+    transition: 0.3s;
+  }
+  .investment .description {
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 0;
+  }
+
+  .investment .card-footer {
+   background-color: white;
+  }
+
+  .investment .icon-box:hover {
+    border-color: 3b434a;
+  }
+  .investment .icon-box:hover .title a {
+    color: 3b434a;
+  }
+
+    /**
+  * Mobile Investment
+  */
+  /*@media (max-width: 640px) {
+    .investment {
+       display: inline-block;
+       width: 100%;
+    }
+  }*/
+
+/*--------------------------------------------------------------
+# Wedding Investment
+--------------------------------------------------------------*/
+
+  .wedding-investment .icon-box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    border: 1px solid #fff;
+  }
+  .wedding-investment .icon {
+    margin: 0 auto 20px auto;
+    padding-top: 17px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+    background: #ffffff;
+  }
+  .wedding-investment .icon i {
+    font-size: 36px;
+    line-height: 1;
+    color: 3b434a;
+  }
+  .wedding-investment .title {
+    font-weight: 650;
+    margin-bottom: 15px;
+    font-size: 17px;
+  }
+  .wedding-investment .title a {
+    color: #3b434a;
+    transition: 0.3s;
+  }
+  .wedding-investment .description {
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 0;
+  }
+
+  .wedding-investment .card-footer {
+   background-color: white;
+  }
+
+  .wedding-investment .icon-box:hover {
+    border-color: 3b434a;
+  }
+  .wedding-investment .icon-box:hover .title a {
+    color: 3b434a;
+  }
+
+    /**
+  * Mobile Wedding Investment 
+  */
+  /*@media (max-width: 640px) {
+    .wedding-investment {
+       display: inline-block;
+       width: 100%;
+    }
+  }*/
+
+/*--------------------------------------------------------------
+# Blog
+--------------------------------------------------------------*/
+.blog .icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  border: 1px solid #fff;
+}
+.blog .icon {
+  margin: 0 auto 20px auto;
+  padding-top: 17px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  background: #ffffff;
+}
+.blog .icon i {
+  font-size: 36px;
+  line-height: 1;
+  color: 3b434a;
+}
+.blog .title {
+  font-weight: 650;
+  margin-bottom: 15px;
+  font-size: 17px;
+}
+.blog .title a {
+  color: #3b434a;
+  transition: 0.3s;
+}
+.blog .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+.blog .card-footer {
+ background-color: white;
+}
+
+.blog .icon-box:hover {
+  border-color: 3b434a;
+}
+.blog .icon-box:hover .title a {
+  color: 3b434a;
+}
+
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+
+.testimonials {
+    padding: 80px 0;
+    background: url("../img/testimonials-bg.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+  }
+  .testimonials::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(14, 16, 17, 0.7);
+  }
+  .testimonials .section-header {
+    margin-bottom: 40px;
+  }
+  .testimonials .testimonials-carousel, .testimonials .testimonials-slider {
+    overflow: hidden;
+  }
+  .testimonials .testimonial-item {
+    text-align: center;
+    color: #fff;
+  }
+  .testimonials .testimonial-item .testimonial-img {
+    width: 100px;
+    border-radius: 50%;
+    border: 6px solid rgba(255, 255, 255, 0.15);
+    margin: 0 auto;
+  }
+  .testimonials .testimonial-item h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: #fff;
+  }
+  .testimonials .testimonial-item h4 {
+    font-size: 14px;
+    color: #ddd;
+    margin: 0 0 15px 0;
+  }
+  .testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 26px;
+  }
+  .testimonials .testimonial-item .quote-icon-left {
+    display: inline-block;
+    left: -5px;
+    position: relative;
+  }
+  .testimonials .testimonial-item .quote-icon-right {
+    display: inline-block;
+    right: -5px;
+    position: relative;
+    top: 10px;
+  }
+  .testimonials .testimonial-item p {
+    font-style: italic;
+    margin: 0 auto 15px auto;
+    color: #eee;
+  }
+  .testimonials .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+  }
+  .testimonials .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  .testimonials .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #ffb727;
+  }
+  @media (min-width: 992px) {
+    .testimonials .testimonial-item p {
+      width: 80%;
+    }
+  }
+
+    /**
+  * Mobile Testimonials
+  */
+  /*@media (max-width: 640px) {
+    .testimonials {
+       display: inline-block;
+       width: 100%;
+    }
+  }*/
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+form {
+  max-width: 40em;
+	border: 2px solid #3b434a;
+	background-color:#d8d8d8;
+	padding: 1em;
+}
+
+h2 {
+    text-align: center;
+}
+	
+/* ========= FLEXBOX ALIGNMENT STYLES ============ */
+
+li {
+	  /* the label and input become flex items within each list item */
+	  /* Wrapping is turned on so labels stack above inputs on narrow viewports */
+	display: flex;
+	flex-wrap: wrap;
+}
+label {
+	/* labels are fixed at 8ems wide with a little margin to keep them 
+	from bumbing into other elements */
+	flex: 0 0 8em;
+	margin-right: 1em;
+	margin-bottom: 4px;
+	color: #487058;
+}
+input, textarea, fieldset {
+	/* form inputs and fieldsets are fully flexible to fill the available width */
+	flex: 1 1 20em;
+}
+
+#features label, #options label {
+	/* Because labels are used differently in the lists within fieldsets,
+	(there's one for each radio button and checkbox)
+	I need to override the previous flex setting so they line up correctly */
+	flex: 1 1 auto;
+	color: #000;
+}
+
+#options ul {
+	/* This makes each radio box list item a flex item so they line up horizontally */
+	/* This could also be done by making them display: inline, 
+	but the labels sometimes get separated from their button/box at narrow widths*/
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+/*  ========= FORM WIDGET STYLES  ========= */
+/* Fonts are set to "inherit" the font-family of the document.*/
+
+input.textinput {
+	height: 2em;
+	border: 1px solid rgba(0,0,0,.3);
+	padding-left: 6px;
+	font-family: inherit;
+	font-size: .875em;
+}
+textarea {
+	display: block;
+	height: 5em;
+	border: 1px solid rgba(0,0,0,.3);
+	padding-left: 6px;
+	font-family: inherit; 
+	font-size: .875em;
+	line-height: 1.25;
+	overflow: auto;
+	resize: none;
+}
+select {
+	width: 6em;
+	font-size: inherit; /* The browser default font size is very small, so I changed it to match the document */
+	margin-right: 10px;
+}
+input[type="submit"] {
+	/* I've changed the style of the button and set its side margins to "auto" so it is 
+	always centered in the width of the form */
+	width: 10em;
+	height: 2em;
+	background: white;
+	border: 1px solid #3b434a;
+	border-radius: 4px;
+	font-size: inherit;
+	flex: 0 1 8em;
+	margin: 0 auto;
+}
+
+
+/* ========= FIELDSET AND LEGEND STYLES ========= */
+fieldset {
+	/* Turns off the default box that browsers draw around fieldsets */
+	padding: 0;
+	border: none;
+}
+legend {
+	/* this hides the legend, but it will still be read by screenreaders 
+	for each checkbox/button option for acccessibility */
+	/* NOTE: There is also a label that displays for each fieldset, so I made sure the
+	label and legend were different as not to have the same term read twice */
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+    /**
+  * Mobile Contact Me 
+  */
+
+  /*@media (max-width: 640px) {
+     .contact {
+        display: inline-block;
+        width: 100%;
+     }
+  }*/
