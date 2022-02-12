@@ -1,0 +1,107 @@
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author: Taylor Harris #
+#Date Created: 1/19/22 #
+#Version: 1 #
+#Date Last Modified: 1/26/22 #
+#Modified by: Taylor Harris #
+#Modification log:              #
+2/11/22 - Created and built site.
+ --
+------------------------------------------------------------------------------------------------------------------>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/WorldFungiDay.css">
+    <!---->
+    <title>Fungi Indentifier World Fungi Day</title>
+    <link rel="icon" type="image/x-icon" href="images/mushroomdesign.png">
+</head>
+<body>
+
+    <header>
+        <img id="logo" class="center" src="images/completedesign.png" alt="Logo"><a href="Home.html"></a>
+    </header>
+
+    <nav id="navbar" class="navbar navbar-collapse navbarResponsive navbar-toggler-icon">
+        <ul class="navbar-nav ml-auto flex-md-column">
+          <li><a class="nav-link active" href="Home.html">Home</a></li>
+          <li><a href="FAQs.html">FAQs</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="WorldFungiDay.html">World Fungi Day!</a></li>
+          <div class="dropdown">
+            <button class="dropbtn">Types of Fungi
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="Edible.html">Edible</a>
+              <a href="Toxic.html">Toxic</a>
+              <a href="TooCoolToBeTrue.html">Too Cool to Be True</a>
+            </div>
+          <!--<input type="text" placeholder="Search.." class="search">-->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+
+    <main>
+     
+        <section class="countdown_section">
+        <h1>Countdown To...</h1>
+        <div>
+            <label for="event">Event Name:</label>
+            <input type="text" name="event" id="event">
+        </div>
+
+        <div>
+            <label for="date">Event Date:</label>
+            <input type="text" name="date" id="date"><br>
+        </div>
+
+        <div>
+            <label>&nbsp;</label>
+            <input type="button" name="countdown" id="countdown"
+                value="Countdown!">
+        </div>
+
+        <div><label id="message"></label></div>
+        </section>
+
+        <br>
+        
+        <section class="task_list_section">
+        <div id="tasks">
+            <label for="task_list">Task List</label><br>
+            <textarea id="task_list" rows="6" cols="50"></textarea>
+        </div>
+        <div>
+            <label for="task">Task:</label><br>
+            <input type="text" name="task" id="task">
+        </div>
+        <div>
+            <label for="due_date">Due Date:</label><br>
+            <input type="text" name="due_date" id="due_date">
+        </div>
+        <div>
+            <input type="button" id="add_task" value="Add Task"><br>
+            <input type="button" id="clear_tasks" value="Clear Tasks"><br>
+            <input type="button" id="filter" value="Filter">
+        </div>
+    </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/task_list.js"></script>
+    <script src="js/countdown.js"></script>
+    <footer>
+      <p>&copy; Copyright 2022. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
