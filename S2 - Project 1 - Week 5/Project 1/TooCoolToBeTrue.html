@@ -1,0 +1,170 @@
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author: Taylor Harris #
+#Date Created: 1/19/22 #
+#Version: 1 #
+#Date Last Modified: 2/3/22 #
+#Modified by: Taylor Harris #
+#Modification log:              #
+1/19/22 - Created and built site.
+1/20/22 - Added details.
+1/21/22 - Made site mobile responsive.
+1/26/22 - Added footer.
+1/27/22 - Turned cards into slideshow.
+2/3/22 - Turned slideshow into carousel.
+2/11/22 - Turned carousel back into slideshow but with controls.
+ --
+------------------------------------------------------------------------------------------------------------------>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/toocool.css">
+    <!---->
+    <title>Fungi Indentifier Too Cool To Be True</title>
+    <link rel="icon" type="image/x-icon" href="images/mushroomdesign.png">
+</head>
+<body>
+    <header>
+        <img id="logo" class="center" src="images/completedesign.png" alt="Logo">
+    </header>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-collapse navbarResponsive navbar-toggler-icon">
+        <ul>
+          <li><a class="nav-link active" href="Home.html">Home</a></li>
+          <li><a href="FAQs.html">FAQs</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="WorldFungiDay.html">World Fungi Day!</a></li>
+          <div class="dropdown">
+            <button class="dropbtn">Types of Fungi
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="Edible.html">Edible</a>
+                <a href="Toxic.html">Toxic</a>
+                <a href="TooCoolToBeTrue.html">Too Cool to Be True</a>
+            </div>
+          <!--<input type="text" placeholder="Search.." class="search">-->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+
+      <main>
+        <section>
+        <!-- Slideshow V1 -->
+        <!-- <div id="slideshow">
+        <ul id="image_list">
+            <li><a href="images/wild-laccaria-amethystina.png" title="Laccaria Amethystina" alt="Laccaria Amethystina"></a></li>
+            <li><a href="images/wild-sarcoscypha-coccinea.jpg" title="Sarcoscypha Coccinea" alt="Sarcoscypha Coccinea"></a></li>
+            <li><a href="images/wild-panellus-stipticus.png" title="Panellus Stipticus" alt="Panellus Stipticus"></a></li>
+            <li><a href="images/wild-entoloma-hochstetteri.png" title="Entoloma Hochstetteri" alt="Entoloma Hochstetteri"></a></li>
+            <li><a href="images/wild-clavaria-zollingeri.png" title="Clavaria Zollingeri" alt="Clavaria Zollingeri"></a></li>
+            <li><a href="images/wild-hydnellum-peckii.png" title="Hydnellum Peckii" alt="Hydnellum Peckii"></a></li>
+        </ul> -->
+
+   <!-- <p>
+            <input type="button" id="start" value="Start">
+            <input type="button" id="pause" value="Pause">
+        </p> -->
+
+
+
+        <!-- Slideshow V2 -->
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 7</div>
+            <img src="images/wild-laccaria-amethystina.png" alt="Laccaria Amethystina" style="width:100%">
+            <div class="text">Laccaria Amethystina</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 7</div>
+            <img src="images/wild-sarcoscypha-coccinea.jpg" alt="Sarcoscypha Coccinea" style="width:100%">
+            <div class="text">Sarcoscypha Coccinea</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 7</div>
+            <img src="images/wild-podostroma-cornu-damae.jpg" alt="Podostroma Cornu-Damae" style="width:100%">
+            <div class="text">Podostroma Cornu-Damae</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 7</div>
+            <img src="images/wild-panellus-stipticus.png" alt="Panellus Stipticus" style="width:100%">
+            <div class="text">Panellus Stipticus</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 7</div>
+            <img src="images/wild-entoloma-hochstetteri.png" alt="Entoloma Hochstetteri" style="width:100%">
+            <div class="text">Entoloma Hochstetteri</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 7</div>
+            <img src="images/wild-clavaria-zollingeri.png" alt="Clavaria Zollingeri" style="width:100%">
+            <div class="text">Clavaria Zollingeri</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">7 / 7</div>
+            <img src="images/wild-hydnellum-peckii.png" alt="Hydnellum Peckii" style="width:100%">
+            <div class="text">Hydnellum Peckii</div>
+          </div>
+        
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+
+
+        <!-- Cycle Show -->
+        <!-- <div class="cycle-slideshow" 
+        data-cycle-fx="scrollHorz"
+        data-cycle-timeout="2000"
+        data-cycle-speed="1000"
+        data-cycle-caption="#adv-custom-caption"
+        data-cycle-caption-template="{{cycleTitle}}">
+
+        <img src="images/wild-laccaria-amethystina.png" alt="Laccaria Amethystina" data-cycle-title="Laccaria Amethystina">
+        <img src="images/wild-sarcoscypha-coccinea.jpg" alt="Sarcoscypha Coccinea" data-cycle-title="Sarcoscypha Coccinea">
+        <img src="images/wild-panellus-stipticus.png" alt="Panellus Stipticus" data-cycle-title="Panellus Stipticus">
+        <img src="images/wild-entoloma-hochstetteri.png" alt="Entoloma Hochstetteri" data-cycle-title="Entoloma Hochstetter">
+        <img src="images/wild-clavaria-zollingeri.png" alt="Clavaria Zollingeri" data-cycle-title="Clavaria Zollingeri">
+        <img src="images/wild-hydnellum-peckii.png" alt="Hydnellum Peckii" data-cycle-title="Hydnellum Peckii"> -->
+        <!-- empty element for caption -->
+        <!-- <div id="adv-custom-caption"></div>
+        </div> -->
+
+
+        <!-- Slideshow V3 -->
+        
+
+        </section>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <!-- <script src="js/jquery.cycle2.min.js"></script> -->
+        <script src="js/toocool.js"></script>
+    </main>
+
+    <!-- <footer>
+      <p>&copy; Copyright 2022. All Rights Reserved.</p>
+    </footer> -->
+</body>
+</html>

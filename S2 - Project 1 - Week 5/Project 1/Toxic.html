@@ -1,0 +1,164 @@
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author: Taylor Harris #
+#Date Created: 1/19/22 #
+#Version: 1 #
+#Date Last Modified: 2/16/22 #
+#Modified by: Taylor Harris #
+#Modification log:              #
+1/19/22 - Created and built site.
+1/20/22 - Added details.
+1/21/22 - Made site mobile responsive.
+1/27/22 - Fixed cards alignment.
+2/16/22 - Added modals.
+ --
+------------------------------------------------------------------------------------------------------------------>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/modals.css">
+  <!---->
+  <title>Fungi Indentifier Toxic</title>
+  <link rel="icon" type="image/x-icon" href="images/mushroomdesign.png">
+</head>
+
+<body>
+  <header>
+    <img id="logo" class="center" src="images/completedesign.png" alt="Logo"><a href="Home.html"></a>
+  </header>
+
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar navbar-collapse navbarResponsive navbar-toggler-icon">
+    <ul>
+      <li><a class="nav-link active" href="Home.html">Home</a></li>
+      <li><a href="FAQs.html">FAQs</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+      <li><a href="WorldFungiDay.html">World Fungi Day!</a></li>
+      <div class="dropdown">
+        <button class="dropbtn">Types of Fungi
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="Edible.html">Edible</a>
+          <a href="Toxic.html">Toxic</a>
+          <a href="TooCoolToBeTrue.html">Too Cool to Be True</a>
+        </div>
+        <!--<input type="text" placeholder="Search.." class="search">-->
+    </ul>
+    <i class="bi bi-list mobile-nav-toggle"></i>
+  </nav>
+
+  <!-- Main -->
+  <main class="cards container my-5">
+  <div class="row">
+    <div class="flip-card-container">
+      <div class="card col-md-3" style="width: 18rem;">
+        <img class="card-img-top" src="images/wildrussulamushroom.jpg" alt="Wild Russula Mushroom">
+        <div class="card-body">
+          <h3 class="card-title">Russula Emetica</h3>
+          <ul>
+            <li>White stemmed mushrooms with red caps, and a faint, fruity odor</li>
+            <li>Found mainly beneath conifers (pines and spruces in particular) and occasionally also on mossy (fairly
+              wet) heathland.</li>
+            <li>Also known as The Sickener. Poisonous when eaten raw or poorly cooked, and can cause nausea and
+              vomiting, followed by severe stomach pains and diarrhea.</li>
+          </ul>
+          <p><strong>*&nbsp;In the WILD&nbsp;*</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card-container">
+      <div class="card col-md-3" style="width: 18rem;">
+        <img class="card-img-top" src="images/wildredtoadstoolmushroom.jpg" alt="Wild Toadstool Mushroom">
+        <div class="card-body">
+          <h3 class="card-title">Amanita Muscaria</h3>
+          <ul>
+            <li>Spore-bearing, fruiting body typically in the form of a bright red and white-spotted, rounded cap on a
+              white stem.</li>
+            <li>Found near evergreen and deciduous trees in temperate and subarctic regions of the Northern Hemisphere.</li>
+            <li>Sometimes referred to as "Toadstool Mushrooms" because they look like the spot where toads would sit.
+              Toadstools are fungi widely believed to be inedible or toxic.</li>
+          </ul>
+          <p><strong>*&nbsp;In the WILD&nbsp;*</strong></p>
+          <button id="myBtn8" class="myBtn">View Green</button>
+          <!-- The Modal -->
+          <div id="myModal8" class="modal">
+            <!-- Modal content -->
+            <div class="modal8-content">
+              <span class="close">×</span>
+              <p><img src="images/wildgreentoadstoolmushroom.jpg" alt="Wild Green Amanita" width="100%"></p>
+            </div>
+          </div><!-- End modal -->
+          <button id="myBtn9" class="myBtn">View Blue</button>
+          <!-- The Modal -->
+          <div id="myModal9" class="modal">
+            <!-- Modal content -->
+            <div class="modal9-content">
+              <span class="close">×</span>
+              <p><img src="images/wildbluetoadstoolmushroom.jpg" alt="Wild Blue Amanita" width="100%"></p>
+            </div>
+          </div><!-- End modal -->
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card-container">
+      <div class="card col-md-3" style="width: 18rem;">
+        <img class="card-img-top" src="images/wild-conocybe-filaris.png" alt="Conocybe Filaris">
+        <div class="card-body">
+          <h3 class="card-title">Conocybe Filaris</h3>
+          <ul>
+            <li>These mushrooms are delicate. They have reddish-brown, bell shaped caps with long, fragile stems.</li>
+            <li>Growing in grasslands on dead moss, dead grass, sand dunes, decayed wood, and dung. Conocybe species generally prefer fertile soils in lawns and pastures and 
+              are found worldwide. An innocent-looking lawn mushroom that is especially common in the Pacific Northwest. </li>
+            <li>Potentially fatal if eaten. The onset of gastrointestinal symptoms often occurs 6-24 hours after the mushrooms were consumed, 
+              frequently leading to an initial misdiagnosis of food poisoning or the stomach flu. The patient may appear to recover, only to 
+              suffer from a life-threatening reappearance of the gastrointestinal distress, coupled with liver and kidney failure.</li>
+          </ul>
+          <p><strong>*&nbsp;In the WILD&nbsp;*</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card-container">
+      <div class="card col-md-3" style="width: 18rem;">
+        <img class="card-img-top" src="images/wild-amanita-virosa.png" alt="">
+        <div class="card-body">
+          <h3 class="card-title">Amanita Virosa</h3>
+          <ul>
+            <li>When young, these mushrooms appear as white egg-shaped objects covered with a universal veil. As they grow, 
+              the mushroom breaks free, though there may be ragged patches of the veil remaining at the cap edges.</li>
+            <li>Native to Europe, not found in North America. They are found in 
+              mixed oak-hardwood conifer forests, other natural areas, or in the landscape. Found either singly or in small groups.</li>
+            <li>Sometimes referred to as "Destroying Angels". These incredibly toxic fungi are very similar in appearance to edible button mushrooms and the meadow mushrooms, 
+              and have been collected by mistake on numerous occassions. Symptoms take 5 to 24 hours to appear and include vomiting, 
+              delirium, convulsions, diarrhea, liver and kidney failure, and often lead to death.</li>
+          </ul>
+          <p><strong>*&nbsp;In the WILD&nbsp;*</strong></p>
+        </div>
+      </div>
+    </div>
+  </div><!--Closing row-->
+
+  </main>
+  <script src="js/toxic_modals.js"></script>
+  <!-- <footer>
+      <p>&copy; Copyright 2022. All Rights Reserved.</p>
+    </footer> -->
+</body>
+
+</html>

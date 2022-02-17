@@ -1,0 +1,135 @@
+/* #faqs {
+    margin-left: 35%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  #faqs h1 { 
+    font-size: 30px;
+  }
+
+  #faqs h2 {
+    font-size: 25px;
+    padding: .25em 0 .25em 1.25em;
+    cursor: pointer;
+    background: url(../images/plussymbol.png) no-repeat left center;
+  }
+
+  #faqs h2.minus {
+    background: url(../images/minussymbol.png) no-repeat left center;
+  }
+
+  #faqs a {
+    color: black;
+    text-decoration: none; 
+  }
+
+  #faqs a:focus, a:hover { 
+  	color: rgb(61, 0, 102); 
+  }
+
+  #faqs div {
+    display: none;
+  }
+
+  #faqs div.open {
+    display: block;
+  }
+
+  #faqs ul {
+    padding-left: 45px;
+  }
+
+  #faqs li {
+    padding-bottom: .25em;
+  }
+
+  #faqs h3 {
+    padding-bottom: .25em;
+    padding-left: 25px;
+    font-size: 25px;
+  } */
+
+  #accordian {
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+  #accordian h1 { 
+    font-size: 35px;
+    font-family: 'Crimson Pro', serif;
+  }
+  #accordian h2 { 
+    font-size: 25px;
+    margin-bottom: .5em;
+    font-family: 'Crimson Pro', serif;
+    border-style: solid;
+    border-width: 0.25em;
+    border-color: rgb(91, 46, 121);
+    border-radius: 0.5em;
+  }
+
+  #accordian h3 {
+    font-size: 23px;
+    font-family: 'Crimson Pro', serif;
+  }
+
+  #accordian #answer1 {
+    border-style: solid;
+    border-width: 0.4em;
+    border-color: rgb(177, 39, 39);
+    border-radius: 0.75em;
+  }
+
+  #accordian #answer2 {
+    border-style: solid;
+    border-width: 0.4em;
+    border-color: rgb(12, 41, 12);
+    border-radius: 0.75em;
+  }
+
+  #accordian #answer3 {
+    border-style: solid;
+    border-width: 0.4em;
+    border-color: rgb(23, 84, 253);
+    border-radius: 0.75em;
+  }
+
+  #accordian #answer4 {
+    border-style: solid;
+    border-width: 0.4em;
+    border-color: rgb(234, 255, 46);
+    border-radius: 0.75em;
+  }
+
+  #accordian #answer5 {
+    border-style: solid;
+    border-width: 0.4em;
+    border-color: rgb(194, 123, 31);
+    border-radius: 0.75em;
+  }
+
+  #accordian #answer6 {
+    border-style: solid;
+    border-width: 0.4em;
+    border-color: rgb(0, 80, 69);
+    border-radius: 0.75em;
+  }
+
+
+
+/*----------------*/
+/* *** MOBILE *** */
+/*----------------*/
+@media (max-width: 620px){
+  #accordian h1 {
+    text-align: center;
+  }
+
+  #accordian {
+    width: 85%;
+    margin-left: 8%;
+    margin-right: 20%;
+  }
+}

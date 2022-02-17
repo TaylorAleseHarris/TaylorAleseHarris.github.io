@@ -1,0 +1,132 @@
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author: Taylor Harris #
+#Date Created: 2/5/22 #
+#Version: 1 #
+#Date Last Modified: 2/5/22 #
+#Modified by: Taylor Harris #
+#Modification log:              #
+2/5/22 - Created page. Added FAQs accordian.
+2/16/22 - Added more questions and answers.
+ --
+------------------------------------------------------------------------------------------------------------------>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/faqs.css">
+    <!-- J -->
+    <link rel="stylesheet" type="text/css" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">   
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <!---->
+    <title>Fungi Indentifier FAQs</title>
+    <link rel="icon" type="image/x-icon" href="images/mushroomdesign.png">
+</head>
+<body>
+    <!-- <script src="js/FI.js"></script> --> <!-- For some reason, no matter where I put this script, it makes my FAQs accordian not work. But I need it to make my contact form work -->
+
+    <header>
+        <img id="logo" class="center" src="images/completedesign.png" alt="Logo"><a href="Home.html"></a>
+    </header>
+
+    <nav id="navbar" class="navbar navbar-collapse navbarResponsive navbar-toggler-icon">
+        <ul class="navbar-nav ml-auto flex-md-column">
+          <li><a class="nav-link active" href="Home.html">Home</a></li>
+          <li><a href="FAQs.html">FAQs</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="WorldFungiDay.html">World Fungi Day!</a></li>
+          <div class="dropdown">
+            <button class="dropbtn">Types of Fungi
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="Edible.html">Edible</a>
+              <a href="Toxic.html">Toxic</a>
+              <a href="TooCoolToBeTrue.html">Too Cool to Be True</a>
+            </div>
+          <!--<input type="text" placeholder="Search.." class="search">-->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+
+    <main>
+         <!-- <section id="faqs">         
+            <h1>FAQ's</h1>
+          <h2><a href="#">What colored fungi should I be most cautious of?</a></h2>
+          <div>
+            <h3>Red...</h3>
+          </div>
+          <h2><a href="#">What makes fungi different from other plants?</a></h2>
+          <div>
+            <h3>They reproduce from spores, unlike plants that reproduce from seeds. Also unlike plants, fungi do not produce their own food
+              and have to obtain both food and water from other sources.</h3>
+          </div>
+          <h2><a href="#">Do fungi grow everywhere in the world?</a></h2>
+          <div>
+            <h3>Yes! They grow on all the continents, a few even in Antarctica.</h3>
+          </div>
+        </section> -->
+
+        <section id="accordian">
+            <h1>FAQ's</h1>       
+            <div id="accordion">
+                 <h2>What colored fungi should I be most cautious of?</h2>
+                <div id="answer1">
+                    <h3>Red..</h3>
+                </div>
+                <h2>What makes fungi different from other plants?</h2>
+                <div id="answer2">
+                    <h3>They reproduce from spores, unlike plants that reproduce from seeds. Also unlike plants, fungi do not produce their own food
+                      and have to obtain both food and water from other sources.</h3>
+                </div>
+                <h2>Do fungi grow everywhere in the world?</h3>
+                <div id="answer3">
+                    <h3>Yes! They grow on all the continents, a few even in Antarctica.</h3>
+                </div>
+                <h2>What's so special about fungi?</h3>
+                <div id="answer4">
+                    <ul>
+                      <li><h3>Without the various types of fungi on Earth, we would soon be knee-deep in dead leaves and other plant matter that would refuse to rot.</h3></li>
+                      <li><h3>Trees that died would continue to lie where they fell. Only fungi can break down lignin, the tough material at the heart of woody tissue.</h3></li>
+                      <li><h3>Our crops would fail because the nutrients that fungi recycle from dead plant tissue would no longer be available.</h3></li>
+                      <li><h3>Important farm animals like sheep would be unable to digest grass without the help they get from some friendly fungi.</h3></li>
+                    </ul>
+                </div>
+                <h2>What can fungi be used for?</h3>
+                <div id="answer5">
+                    <h3>Humans use fungi for many purposes, including as food or in the preparation of food. Humans also use fungi for pest control. In addition, fungi can be used 
+                      to produce citric acid, antibiotics, and human hormones.</h3>
+                </div>
+                <h2>How large can mushrooms grow?</h3>
+                  <div id="answer6">
+                      <h3>The largest mushroom in the Western Hemisphere, Macrocybe Titans, can grow to be 3 feet across, 1 ½ feet tall, and weigh up to 8 pounds!</h3>
+                  </div>
+            </div>
+        </section>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>   
+        <script>
+            $(document).ready( () => 
+                $("#accordion").accordion({ 
+                    event: "click",
+                    heightStyle: "content",
+                    collapsible: true,
+                    active: 6
+                })
+            )
+        </script> 
+    </main>
+    <footer>
+        <p>&copy; Copyright 2022. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
