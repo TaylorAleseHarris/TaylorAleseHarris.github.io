@@ -1,0 +1,125 @@
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author: Taylor Harris #
+#Date Created: 2/5/22 #
+#Version: 1 #
+#Date Last Modified: 2/11/22 #
+#Modified by: Taylor Harris #
+#Modification log:              #
+2/5/22 - Created page. Added Contact form.
+2/11/22 - Fixed javascript on form.
+ --
+------------------------------------------------------------------------------------------------------------------>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <!-- J -->
+
+    <!---->
+    <title>Fungi Indentifier Contact</title>
+    <link rel="icon" type="image/x-icon" href="images/mushroomdesign.png">
+</head>
+<body>
+
+    <header>
+        <img id="logo" class="center" src="images/completedesign.png" alt="Logo"><a href="Home.html"></a>
+    </header>
+
+    <nav id="navbar" class="navbar navbar-collapse navbarResponsive navbar-toggler-icon">
+        <ul class="navbar-nav ml-auto flex-md-column">
+          <li><a class="nav-link active" href="Home.html">Home</a></li>
+          <li><a href="FAQs.html">FAQs</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="WorldFungiDay.html">World Fungi Day!</a></li>
+          <div class="dropdown">
+            <button class="dropbtn">Types of Fungi
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="Edible.html">Edible</a>
+              <a href="Toxic.html">Toxic</a>
+              <a href="TooCoolToBeTrue.html">Too Cool to Be True</a>
+            </div>
+          <!--<input type="text" placeholder="Search.." class="search">-->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+
+    <main>
+        <div class="contact">
+        <form id="contact_me" name="contact_me" method="get">
+
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <span>*</span>
+            </div>
+            <br>
+            <div>
+                <label for="dropdown">I am a </label>
+                <select name="dropdown" id="dropdown">
+                  <option value="">Select</option>
+                  <option>Human</option>
+                  <option>Fellow Fungi</option>
+                  <option>Prefer not to specify</option>
+                </select>
+                <span>*</span>
+            </div>
+            <br>
+            <div>
+                <label for="email_1">Email Address:</label>
+                <input type="text" id="email_1" name="email_1">
+                <span>*</span>
+            </div>
+            <br>
+            <div>
+                <label for="email_2">Confirm Email Address:</label>
+                <input type="text" id="email_2" name="email_2">
+                <span>*</span>
+            </div>
+            <br>           
+            <div>
+                <label for="phone">Mobile Phone:</label>
+                <input type="text" id="phone" name="phone">
+                <span>*</span>
+            </div>
+            <br>
+            <div>
+                <label>Preferred Contact Method: </label>
+                <input type="radio" name="contact_method" id="email" value="email" checked>Email
+                <input type="radio" name="contact_method" id="text" value="text">Text
+            </div>
+            <br>
+            <div>
+                <label for="message">Message: </label>
+                <textarea name="message" id="message"
+                rows="5" cols="40"></textarea>
+                <span>*</span>
+            </div>
+            <br>
+            <div>
+                <label>&nbsp;</label>
+                <input type="submit" id="submit" name="submit" value="Contact Me">
+                <input type="reset" id="reset" name="reset" value="Reset">
+            </div>
+        </div>
+        </form>
+        </form>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/contact.js"></script>
+    <footer>
+      <p>&copy; Copyright 2022. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

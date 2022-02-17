@@ -1,0 +1,196 @@
+/*********************************************************************
+***
+*Original Author: Taylor Harris *
+*Date Created: 1/19/22 *
+*Version: 1 *
+*Date Last Modified: 2/3/22 *
+*Modified by: Taylor Harris *
+*Modification log:              *
+1/19/22 - Created css. Customized cards.
+2/3/22 -  Customized carousel.
+2/11/22 - Customized slideshow with controls.
+***
+******************************************************************** */
+
+/*----------------------*/
+/* *** SLIDESHOW V1 *** */
+/*----------------------*/
+
+/* #slideshow {
+    font-family: 'Crimson Pro', serif;
+    margin: 0 auto;
+    padding: 0 2em 1em;
+}
+
+#slideshow h2 {
+    color: black;
+    text-align: center;
+}
+
+#slideshow ul { 
+    display: none; 
+}
+
+#slideshow p {
+    text-align: center;
+}
+
+#slideshow #start, #pause {
+    font-family: 'Crimson Pro', serif;
+    color: black;
+    font-size: large;
+    border-style: solid;
+    border-color: black;
+    padding: .25em;
+} */
+
+
+
+/*----------------------*/
+/* *** SLIDESHOW V2 *** */
+/*----------------------*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 3%;
+}
+
+/* Hide the images by default */
+.slideshow-container .mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.slideshow-container .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.slideshow-container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.slideshow-container .prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.slideshow-container .text {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Crimson Pro', serif;
+  background-color: black;
+}
+
+/* Number text (1/3 etc) */
+.slideshow-container .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.slideshow-container .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.slideshow-container .active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.slideshow-container .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/*--------------------*/
+/* *** CYCLE SHOW *** */
+/*--------------------*/
+
+/* .cycle-slideshow #adv-custom-caption {
+  margin-top: 100px;
+  background-color: white;
+  border-color: black;
+  border-style: solid;
+  border-width: .25em;
+  font-family: 'Crimson Pro', serif;
+  font-size: large;
+  margin-left: 45em;
+  width: 100px;
+  text-align: center;
+}
+
+.cycle-slideshow img {
+  width: 475px;
+  padding: 20px 20px 20px 20px;
+  margin-left: 37em;
+  background-color: white;
+  border-color: black;
+  border-style: solid;
+  border-width: .25em;
+} */
+
+
+
+/*----------------------*/
+/* *** SLIDESHOW V2 *** */
+/*----------------------*/
+
+
+
+/*----------------*/
+/* *** MOBILE *** */
+/*----------------*/
+@media (max-width: 620px){
+
+  /* .cycle-slideshow {
+    width: 85%;
+    float: left;
+    margin-right: 40%;
+  } */
+}
