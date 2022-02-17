@@ -1,0 +1,97 @@
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author: Taylor Harris #
+#Date Created: 1/19/22 #
+#Version: 1 #
+#Date Last Modified: 1/26/22 #
+#Modified by: Taylor Harris #
+#Modification log:              #
+1/19/22 - Created and built site.
+1/20/22 - Added details.
+1/21/22 - Made site mobile responsive.
+1/25/22 - Added href links to other pages in the main. Added Newsletter section.
+1/26/22 - Added footer.
+ --
+------------------------------------------------------------------------------------------------------------------>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/FI.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap" rel="stylesheet">
+    <script src="js/FI.js"></script>
+    <title>Fungi Indentifier Home</title>
+    <link rel="icon" type="image/x-icon" href="images/mushroomdesign.png">
+</head>
+<body>
+
+    <header>
+        <img id="logo" class="center" src="images/completedesign.png" alt="Logo"><a href="Home.html"></a>
+    </header>
+
+    <nav id="navbar" class="navbar navbar-collapse navbarResponsive navbar-toggler-icon">
+        <ul class="navbar-nav ml-auto flex-md-column">
+          <li><a class="nav-link active" href="Home.html">Home</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <div class="dropdown">
+            <button class="dropbtn">Types of Fungi
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="Edible.html">Edible</a>
+              <a href="Toxic.html">Toxic</a>
+              <a href="TooCoolToBeTrue.html">Too Cool to Be True</a>
+            </div>
+          <!--<input type="text" placeholder="Search.." class="search">-->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+
+    <main>
+        <img id="mushy2" src="images/mushydesign.png" alt="Mushy the Mushroom">
+        <div class="homediv">
+            <h1>Hi, I'm Mushy! It's pronounced moo-shē.</h1>
+            <h3>I'm the #1 detective for fungi identification. Fun fact: I am a Toadstool mushroom! My species is considered to be "inedible" and "toxic".</h3>
+            <h3>Here you can find out all sorts of information about both <a href="Edible.html">edible</a> and <a href="Toxic.html">toxic</a> fungis; like descriptions to help identify, where they're commonly
+                found, and some fun facts!
+                I also have information on super colorful fungis that are <a href="TooCoolToBeTrue.html">too cool to be true!</a>
+            </h3>
+            <h3>Feel free to <a href="Contact.html">contact me</a>, Mushy, if you have a fungi-related questions I can answer for you.</h3>
+            <h3>Sign up for my newsletter to get all the latest tips, tricks, and info!</h3>
+        </div>
+        <br>
+        <br>
+        <div class="newsletter">
+          <form id="join_newsletter" name="join_newsletter">
+
+            <div>
+              <label for="news_firstName">First Name: </label>
+              <input type="text" id="news_firstName" name="news_firstName">
+            </div>
+            <br>
+            <div>
+                <label for="news_email1">Email Address: </label>
+                <input type="text" id="news_email1" name="news_email1">
+            </div>
+            <br>
+            <div>
+                <label for="news_email2">Confirm Email Address: </label>
+                <input type="text" id="news_email2" name="news_email2">
+            </div>
+            <br>
+            <div>
+                <label>&nbsp;</label>
+                <input type="button" id="join" value="Join Newsletter">
+            </div>     
+        </form>
+        </div>
+    </main>
+    <footer>
+      <p>&copy; Copyright 2022. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
