@@ -1,0 +1,64 @@
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author: Taylor Harris #
+#Date Created: 1/19/22 #
+#Version: 1 #
+#Date Last Modified: 1/21/22 #
+#Modified by: Taylor Harris #
+#Modification log:              #
+1/19/22 - Created and built site.
+1/20/22 - Added details.
+1/21/22 - Made site mobile responsive.
+ --
+------------------------------------------------------------------------------------------------------------------>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/FI.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap" rel="stylesheet">
+    <title>Fungi Indentifier Home</title>
+    <link rel="icon" type="image/x-icon" href="images/mushroomdesign.png">
+</head>
+<body>
+    <script src="js/FI.js"></script>
+
+    <header>
+        <img id="logo" class="center" src="images/completedesign.png" alt="Logo"><a href="Home.html"></a>
+    </header>
+
+    <nav id="navbar" class="navbar navbar-collapse navbarResponsive navbar-toggler-icon">
+        <ul class="navbar-nav ml-auto flex-md-column">
+          <li><a class="nav-link active" href="Home.html">Home</a></li>
+          <div class="dropdown">
+            <button class="dropbtn">Types of Fungi
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="Edible.html">Edible</a>
+              <a href="Toxic.html">Toxic</a>
+              <a href="TooCoolToBeTrue.html">Too Cool to Be True</a>
+            </div>
+          <!--<input type="text" placeholder="Search.." class="search">-->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+
+    <main>
+        <img id="mushy2" src="images/mushydesign.png" alt="Mushy the Mushroom">
+        <div class="homediv">
+            <h1>Hi, I'm Mushy! It's pronounced moo-shē.</h1>
+            <h3>I'm the #1 detective for fungi identification. Fun fact: I am a Toadstool mushroom! My species is considered to be "inedible" and "toxic".</h3>
+            <h3>Here you can find out all sorts of information about both edible and toxic fungis; like descriptions to help identify, where they're commonly
+                found, and some fun facts!
+                I also have information on super colorful fungis that are too cool to be true!
+            </h3>
+        </div>
+    </main>
+
+</body>
+</html>

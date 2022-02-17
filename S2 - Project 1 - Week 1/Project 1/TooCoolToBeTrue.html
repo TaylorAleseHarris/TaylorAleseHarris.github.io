@@ -1,0 +1,100 @@
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author: Taylor Harris #
+#Date Created: 1/19/22 #
+#Version: 1 #
+#Date Last Modified: 1/21/22 #
+#Modified by: Taylor Harris #
+#Modification log:              #
+1/19/22 - Created and built site.
+1/20/22 - Added details.
+1/21/22 - Made site mobile responsive.
+ --
+------------------------------------------------------------------------------------------------------------------>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/FI.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap" rel="stylesheet">
+    <title>Fungi Indentifier Edible</title>
+    <link rel="icon" type="image/x-icon" href="images/mushroomdesign.png">
+</head>
+<body>
+    <header>
+        <img id="logo" class="center" src="images/completedesign.png" alt="Logo"><a href="Home.html"></a>
+    </header>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-collapse navbarResponsive navbar-toggler-icon">
+        <ul>
+          <li><a class="nav-link active" href="Home.html">Home</a></li>
+          <div class="dropdown">
+            <button class="dropbtn">Types of Fungi
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="Edible.html">Edible</a>
+                <a href="Toxic.html">Toxic</a>
+                <a href="TooCoolToBeTrue.html">Too Cool to Be True</a>
+            </div>
+          <!--<input type="text" placeholder="Search.." class="search">-->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+
+    <!-- Main -->
+    <main class="container my-5">
+        <div class="row">
+        <div class="card flex-md-column" style="width: 18rem;">
+            <img class="card-img-top" src="images/wild-laccaria-amethystina.jpeg" alt="Laccaria Amethystina">
+            <div class="card-body">
+              <h3 class="card-title">Laccaria Amethystina Mushrooms</h3>
+            </div>
+          </div>  
+
+          <div class="card flex-md-column" style="width: 18rem;">
+            <img class="card-img-top" src="images/wild-sarcoscypha-coccinea.jpg" alt="Sarcoscypha Coccinea">
+            <div class="card-body">
+              <h3 class="card-title">Sarcoscypha Coccinea Mushrooms</h3>
+            </div>
+          </div> 
+
+          <div class="card flex-md-column" style="width: 18rem;">
+            <img class="card-img-top" src="images/wild-panellus-stipticus.jpg" alt="Panellus Stipticus">
+            <div class="card-body">
+              <h3 class="card-title">Panellus Stipticus Mushrooms</h3>
+            </div>
+          </div> 
+
+          <div class="card flex-md-column" style="width: 18rem;">
+            <img class="card-img-top" src="images/wild-entoloma-hochstetteri.jpg" alt="Entoloma Hochstetteri">
+            <div class="card-body">
+              <h3 class="card-title">Entoloma Hochstetteri Mushrooms</h3>
+            </div>
+          </div> 
+
+          <div class="card flex-md-column" style="width: 18rem;">
+            <img class="card-img-top" src="images/wild-clavaria-zollingeri.jpg" alt="Clavaria Zollingeri">
+            <div class="card-body">
+              <h3 class="card-title">Clavaria Zollingeri Mushrooms</h3>
+            </div>
+          </div> 
+
+          <div class="card flex-md-column" style="width: 18rem;">
+            <img class="card-img-top" src="images/wild-hydnellum-peckii.png" alt="Hydnellum Peckii">
+            <div class="card-body">
+              <h3 class="card-title">Hydnellum Peckii Mushroom</h3>
+            </div>
+          </div> 
+        </div> <!-- Closing row div -->
+    </main>
+</body>
+</html>
