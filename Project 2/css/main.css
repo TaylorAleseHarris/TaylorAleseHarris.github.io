@@ -1,0 +1,294 @@
+/*********************************************************************
+***
+*Original Author: Taylor Harris *
+*Date Created: 2/22/22 *
+*Version: 1 *
+*Date Last Modified: 2/22/22 *
+*Modified by: Taylor Harris *
+*Modification log:              *
+2/22/22 - Created css. Styled body, nav bar, and footer.
+***
+******************************************************************** */
+
+
+
+body {
+    background-image: url("../images/background-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#intro {
+  font-family: 'El Messiri', sans-serif;
+  letter-spacing: 2px;
+  display: block;
+  padding: .5em;
+  float: right;
+  border: solid black 1.75px;
+  background-color: rgba(255, 255, 255, 0.808);
+  margin-top: 9%;
+  width: 50%;
+  margin-right: 5%;
+}
+
+#me {
+  width: 30%;
+  display: block;
+  padding: .5em;
+  float: left;
+  border: solid black 1.75px;
+  background-color: rgba(255, 255, 255, 0.808);
+  margin-top: 3%;
+  margin-left: 5%;
+}
+
+
+
+/* ------------------ */
+/* *** NAVIGATION *** */
+/* ------------------ */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    font-family: 'El Messiri', sans-serif;
+    letter-spacing: 2px;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: rgba(0, 0, 0, 0.75);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: rgb(31, 30, 30, 0.75);
+    color: white;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+  }
+ 
+
+
+/* -------------- */
+/* *** GAMING *** */
+/* -------------- */
+/* Make sure that padding behaves as expected */
+/* * {box-sizing:border-box} */
+
+.skills {
+  background-color: rgba(255, 255, 255, 0.808);
+  padding-top: .75em;
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  font-family: 'El Messiri', sans-serif;
+  letter-spacing: 2px;
+  width: 100%;
+}
+
+#skills {
+  margin-top: 30%;
+  margin-bottom: 10%;
+}
+
+/* Container for skill bars */
+.container {
+  width: 100%; 
+  background-color: rgb(175, 174, 174);
+  color: white;
+}
+
+.apex {width: 100%; background-color: #991515;}
+.unturned {width: 19%; background-color: #517747;} 
+.minecraft {width: 3%; background-color: #07d133bd;} 
+.forest {width: 1%; background-color: #203311;}
+
+
+/* --------------- */
+/* *** CONTACT *** */
+/* --------------- */
+.contact form {
+    background-color: black;
+    /* border-style:dashed;
+    border-width: .5em;
+    border-color: rgb(91, 46, 121); */
+    color: white;
+    padding: 1em 0 1em 1em;
+    font-family: 'El Messiri', sans-serif;
+    font-size: larger;
+    margin-top: 2.5em;
+    margin-left: 27%;
+    margin-bottom: 8em;
+    width: 750px;
+  }
+  
+  .contact label {
+    display: inline-block;
+    width: 11em;
+    text-align: right;
+    vertical-align: top;
+    margin-left: 5%;
+  }
+  
+  .contact #name, #email_1, #email_2, #phone, #email, #text, #message {
+    font-family: 'El Messiri', sans-serif;
+    font-size: large;
+    margin-left: 5%;
+  }
+
+  .contact #task1 {
+    margin-left: 4.5%;
+  }
+
+  .contact #task2, #task3 {
+    margin-left: 38.5%;
+  }
+  
+  .contact input, select, textarea {
+    margin-left: 1em;
+    margin-right: 0.5em;
+  }
+  
+  .contact textarea {
+    height: 5em;
+    width: 20em;
+  }
+  
+  .contact span {
+    color: rgb(49, 112, 141);
+  }
+  
+  #contact_message {
+    padding: .5em;
+    margin-bottom: .5em;
+    text-align: left;
+    vertical-align: top;
+    font-family: 'El Messiri', sans-serif;
+    font-size: large;
+  }
+  
+  #submit, #reset {
+    font-family: 'El Messiri', sans-serif;
+    font-size: large;
+    margin-left: 5%;
+  }
+
+
+/* -------------- */
+/* *** FOOTER *** */
+/* -------------- */
+  footer {
+    background-color: rgba(0, 0, 0, 0.75);
+    font-family: 'El Messiri', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 98.75%;
+    padding: 14px;
+    margin: 10px 10px 10px 10px;
+  }
+  
+
+
+
+/* -------------- */
+/* *** MOBILE *** */
+/* -------------- */
+@media (max-width: 620px){
+    body {
+        background-image: url("../images/vertical-background-image-b&w.png");
+        background-repeat:repeat-y;
+        background-size: cover;
+    }
+
+    footer {
+        position:relative;
+        left: 0;
+        bottom: 0;
+        width: 99%;
+        padding: 14px;
+        margin: 5px 5px 5px 5px;
+    }
+
+    /* .contact form {
+      width: 90%;
+      align-content: center;
+      text-align: center;
+      margin-right: 10%;
+    } */
+
+    .contact {
+      margin-top: 10%;
+  }
+
+    #contact_me {
+      width: 500px;
+      height: 850px;
+      font-size: 18px;
+      margin: 0 auto;
+      justify-content: center;
+      /* text-align: center; */
+      margin-bottom: 50px;
+    }
+
+    .contact input, select, textarea, label {
+      display: inline-block;
+      /* text-align: center; */
+      vertical-align: top;
+      padding: .25em;
+    }
+/* 
+    .contact label {
+      display: inline-block;
+      text-align: center;
+      vertical-align: top;
+      padding: .25em;
+    }
+  
+    .contact textarea {
+      height: 5em;
+      width: 15em;
+    } */
+
+    .contact #submit {
+      margin-right: 20%;
+    } 
+
+    .contact #reset {
+      margin-right: 18%;
+    }
+
+    .contact #name, #email_1, #email_2, #phone, #email, #text, #message {
+      /* text-align: center; */
+    }
+    
+    .contact input, select, textarea {
+      /* text-align: center; */
+    }
+}

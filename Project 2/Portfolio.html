@@ -1,0 +1,181 @@
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author: Taylor Harris #
+#Date Created: 2/22/22 #
+#Version: 1 #
+#Date Last Modified: 2/22/22 #
+#Modified by: Taylor Harris #
+#Modification log:              #
+2/22/22 - Created page. Added nav bar and footer.
+--
+------------------------------------------------------------------------------------------------------------------>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modals.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <main>
+
+        <!-- Navigation Menu -->
+        <div class="topnav">
+            <a href="Portfolio.html" class="active">Portfolio</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="Home.html">Home</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="nav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <!-- Portfolio Grid-->
+        <section id="grid">
+
+            <!-- Portfolio Modals-->
+            <!-- Portfolio Modal 1 -->
+            <div id="portfolio1">
+                <img id="img1" src="images/project1.png" alt="Fungi Identifier Project" width="50%"><br>
+                <!-- Trigger/Open The Modal -->
+                <button id="myBtn1" class="myBtn">Open</button>
+                <!-- The Modal -->
+                <div id="myModal1" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal1-content">
+                        <span class="close">×</span>
+                        <p><img src="images/project1-1.png" alt="Fungi Identifier Project" width="80%"></p>
+                        <h1>Fungi Identifier</h1>
+                        <p>This is my favorite project to date. It is a fungi identification website, run by Mushy. I
+                            created Mushy - I drew him, named him, gave him his personality. This project was very customized, 
+                            which is why it is so dear to my heart. I plan to take this project further in the future, hopefully
+                            someday leading to its own app.
+                        </p>
+                        <p><a href="https://tayloraleseharris.github.io/S2%20-%20Project%201%20-%20Week%205/Project%201/LandingPage.html"
+                                target="_blank">Open Project</a></p>
+                    </div>
+                </div><!-- End modal -->
+            </div>
+
+            <!-- Portfolio Modal 2 -->
+            <div id="portfolio2">
+                <img id="img2" src="images/project2.png" alt="Mario Kart Project" width="50%"><br>
+                <!-- Trigger/Open The Modal -->
+                <button id="myBtn2" class="myBtn">Open</button>
+                <!-- The Modal -->
+                <div id="myModal2" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal2-content">
+                        <span class="close">×</span>
+                        <p><img src="images/project2-1.png" alt="Mario Kart Project" width="80%"></p>
+                        <h1>Mario Kart Animation</h1>
+                        <p>This was my first project working with CSS animations. It was definitely a fun project to work on.</p>
+                        <p><a href="https://tayloraleseharris.github.io/04-10Mario-Examples/index.html"
+                                target="_blank">Open Project</a></p>
+                    </div>
+                </div><!-- End modal -->
+            </div>
+
+            <!-- Portfolio Modal 3 -->
+            <div id="portfolio3">
+                <img id="img1" src="images/project3.png" alt="Taylor Alese Photography Project" width="50%"><br>
+                <!-- Trigger/Open The Modal -->
+                <button id="myBtn3" class="myBtn">Open</button>
+                <!-- The Modal -->
+                <div id="myModal3" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal3-content">
+                        <span class="close">×</span>
+                        <p><img src="images/project3-1.png" alt="Taylor Alese Photography Project" width="80%"></p>
+                        <h1>Taylor Alese Photography</h1>
+                        <p>This was a redesign of my photography website. It was created from a bootstrap template, so all
+                            of the javascript work was done for me, I just added my own content and customized it. I hope someday I'll be
+                            able to create something this extravagant entirely on my own.
+                        </p>
+                        <p><a href="https://tayloraleseharris.github.io/Portfolio%20Redesign/Home.html"
+                                target="_blank">Open Project</a></p>
+                    </div>
+                </div><!-- End modal -->
+            </div>
+
+            <!-- Portfolio Modal 4 -->
+            <!-- <div id="portfolio4"> -->
+            <!-- <img id="img1" src="images/" alt=" Project" width="50%"><br> -->
+            <!-- Trigger/Open The Modal -->
+            <!-- <button id="myBtn4" class="myBtn">Open</button> -->
+            <!-- The Modal -->
+            <!-- <div id="myModal4" class="modal"> -->
+            <!-- Modal content -->
+            <!-- <div class="modal4-content"> -->
+            <!-- <span class="close">×</span> -->
+            <!-- <p><img src="images/" alt=" Project" width="50%"></p> -->
+            <!-- <p>About the project</p> -->
+            <!-- <p><a href="" target="_blank">Open Project</a></p> -->
+            <!-- </div> -->
+            <!-- </div>End modal -->
+            <!-- </div> -->
+
+            <!-- Portfolio Modal 5 -->
+            <!-- <div id="portfolio5"> -->
+            <!-- <img id="img1" src="images/" alt=" Project" width="50%"><br> -->
+            <!-- Trigger/Open The Modal -->
+            <!-- <button id="myBtn5" class="myBtn">Open</button> -->
+            <!-- The Modal -->
+            <!-- <div id="myModal5" class="modal"> -->
+            <!-- Modal content -->
+            <!-- <div class="modal5-content"> -->
+            <!-- <span class="close">×</span> -->
+            <!-- <p><img src="images/" alt=" Project" width="50%"></p> -->
+            <!-- <p>About the project</p> -->
+            <!-- <p><a href="" target="_blank">Open Project</a></p> -->
+            <!-- </div> -->
+            <!-- </div>End modal -->
+            <!-- </div> -->
+
+            <!-- Portfolio Modal 6 -->
+            <!-- <div id="portfolio6"> -->
+            <!-- <img id="img1" src="images/" alt=" Project" width="50%"><br> -->
+            <!-- Trigger/Open The Modal -->
+            <!-- <button id="myBtn6" class="myBtn">Open</button> -->
+            <!-- The Modal -->
+            <!-- <div id="myModal6" class="modal"> -->
+            <!-- Modal content -->
+            <!-- <div class="modal6-content"> -->
+            <!-- <span class="close">×</span> -->
+            <!-- <p><img src="images/" alt=" Project" width="50%"></p> -->
+            <!-- <p>About the project</p> -->
+            <!-- <p><a href="" target="_blank">Open Project</a></p> -->
+            <!-- </div> -->
+            <!-- </div>End modal -->
+            <!-- </div> -->
+
+        </section>
+
+
+    </main>
+    <footer>
+        <a href="https://github.com/TaylorAleseHarris/TaylorAleseHarris.github.io" target="_blank"><img
+                class="footer-img" src="images/github-logo.png" alt="Github logo"></a>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/modals.js"></script>
+</body>

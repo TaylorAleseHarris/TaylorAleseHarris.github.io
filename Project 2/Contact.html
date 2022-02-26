@@ -1,0 +1,112 @@
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author: Taylor Harris #
+#Date Created: 2/22/22 #
+#Version: 1 #
+#Date Last Modified: 2/24/22 #
+#Modified by: Taylor Harris #
+#Modification log:              #
+2/22/22 - Created page. Added nav bar and footer.
+2/23/22 - Added contact form.
+2/24/22 - Added checkboxes to contact form.
+--
+------------------------------------------------------------------------------------------------------------------>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <main>
+
+        <!-- Navigation Menu -->
+        <div class="topnav">
+            <a href="Contact.html" class="active">Contact</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="Home.html">Home</a>
+                <a href="Portfolio.html">Portfolio</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="nav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <div class="contact">
+            <form id="contact_me" name="contact_me" method="get">
+                <div>
+                    <label>How Can I Help You?</label>
+                    <input type="checkbox" name="task1" id="task1" value="task1">Web Design<br>
+                    <input type="checkbox" name="task2" id="task2" value="task2">Photoshop<br>
+                    <input type="checkbox" name="task3" id="task3" value="task3">Something Else&nbsp;&nbsp;
+                    <span>*</span>
+                </div>
+                <br>
+                <div>
+                    <label for="name">Your Name: </label>
+                    <input type="text" id="name" name="name">
+                    <span>*</span>
+                </div>
+                <br>
+                <div>
+                    <label for="email_1">Email Address: </label>
+                    <input type="text" id="email_1" name="email_1">
+                    <span>*</span>
+                </div>
+                <br>
+                <div>
+                    <label for="email_2">Confirm Email Address: </label>
+                    <input type="text" id="email_2" name="email_2">
+                    <span>*</span>
+                </div>
+                <br>
+                <div>
+                    <label for="phone">Mobile Phone: </label>
+                    <input type="text" id="phone" name="phone">
+                    <span>*</span>
+                </div>
+                <br>
+                <div>
+                    <label>Preferred Contact Method: </label>
+                    <input type="radio" name="contact_method" id="email" value="email" checked>Email
+                    <input type="radio" name="contact_method" id="text" value="text">Text
+                </div>
+                <br>
+                <div>
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" rows="5" cols="40"></textarea>
+                    <span>*</span>
+                </div>
+                <br>
+                <div>
+                    <label>&nbsp;</label>
+                    <input type="button" id="submit" name="submit" value="Contact Me">
+                    <input type="reset" id="reset" name="reset" value="Reset">
+                </div>
+        </div>
+        </form>
+
+    </main>
+    <footer>
+        <a href="https://github.com/TaylorAleseHarris/TaylorAleseHarris.github.io" target="_blank"><img
+                class="footer-img" src="images/github-logo.png" alt="Github logo"></a>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script> <!-- Always include this or your form won't work!!! It defines $ and does other stuff. -->
+    <script src="js/form.js"></script>
+</body>

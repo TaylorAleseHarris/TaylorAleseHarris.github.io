@@ -1,0 +1,95 @@
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author: Taylor Harris #
+#Date Created: 2/22/22 #
+#Version: 1 #
+#Date Last Modified: 2/22/22 #
+#Modified by: Taylor Harris #
+#Modification log:              #
+2/22/22 - Created page. Added nav bar and footer.
+--
+------------------------------------------------------------------------------------------------------------------>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <main>
+
+        <!-- Navigation Menu -->
+        <div class="topnav">
+            <a href="Home.html" class="active">Home</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="Portfolio.html">Portfolio</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="nav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <img id="me" src="images/Me.jpg">
+        <p id="intro">Hi, I'm Taylor! I am in my second semester of software development and plan
+            to graduate next year. So far I have learned C#, HTML + CSS, JavaScript, and
+            am currently learning about libraries. I am best at styling languages so far,
+            and struggle most with object-oriented languages. When I'm not doing school or
+            working (which I'm never not doing), I am a photographer, and when I'm not busy
+            with that job, I play games! Below you can see some of my most favorite games at
+            the moment, along with how many hours I have logged for them! My two favorite
+            types of games are battle royales and survival. Maybe someday I'll compete in 
+            some eSports, but right now I am way too busy! They're a fun escape, for sure, though. 
+        </p>
+
+        <!-- Gaming bar -->
+        <!-- Animate these! -->
+        <section id="skills">
+        <div class="skills">
+            <p>Apex Legends</p>
+            <p>62.5 days (PC, not including PS hours)</p>
+            <div class="container">
+                <div class="skills apex">1641 hours</div>
+            </div>
+
+            <p>Unturned</p>
+            <p>13.37 days (PC)</p>
+            <div class="container">
+                <div class="skills unturned">321 hours</div>
+            </div>
+
+            <p>Minecraft</p>
+            <p>6.25 days (Android, not including Xbox or PS hours)</p>
+            <div class="container">
+                <div class="skills minecraft">55 hours</div>
+            </div>
+
+            <p>The Forest</p>
+            <p>Almost 1 day (PC)</p>
+            <div class="container">
+                <div class="skills forest">20 hours</div>
+            </div>
+        </div>
+        </section>
+
+    </main>
+    <footer>
+        <a href="https://github.com/TaylorAleseHarris/TaylorAleseHarris.github.io" target="_blank"><img
+                class="footer-img" src="images/github-logo.png" alt="Github logo"></a>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
