@@ -1,0 +1,206 @@
+/*********************************************************************
+***
+#Original Author: Taylor Harris #
+#Date Created: 2/28/22 #
+#Version: 1 #
+#Date Last Modified: 3/4/22 #
+#Modified by: Taylor Harris #
+#Modification log:              #
+2/28/22 - Created page. 
+2/29/22 - Designed header.
+2/30/22 - Designed Attractions section.
+3/3/22 - Designed Interactions, Exhibits, Visit, and Map sections.
+3/4/22 - Fixed mobile view a little.
+***
+******************************************************************** */
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+.family-sans {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 200;
+}
+
+.icon {
+    display: inline-block;
+    font-size: inherit;
+    overflow: visible;
+    vertical-align: -0.125;
+    text-rendering: auto;
+    fill: gray !important;
+    width: 50px;
+    height: 50px;
+    padding: 0.25em;
+}
+  
+.animated {
+    visibility: visible !important;
+}
+
+body {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 200;
+    color: #404040;
+}
+
+.site-header {
+    background: url(../images/main_starfish.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.site-header .animated {
+    animation-delay: 2s;
+    animation-duration: 1s;
+}
+
+.layout-text {
+    font-size: 1.1em;
+}
+
+.site-nav.inbody {
+    background: #2a2c2e;
+}
+  
+@media screen and (max-width: 768px) {
+    .site-header .navbar-collapse {
+      background-color: rgba(0, 0, 0, 0.9);
+      padding: 10px;
+    }
+}
+
+.site-header .layout-hero {
+    min-height: 50vh;
+}
+
+.site-header .page-section-title {
+    font-size: 3em;
+    font-family: sans-serif;
+    font-weight: 200;
+}
+
+.site-header .page-section-text {
+    font-size: 1.2em;
+}
+
+.site-header .nav-link {
+    position: relative;
+    padding-bottom: 0;
+    margin-bottom: 2px;
+}
+
+.site-header .nav-link:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    max-width: 100px;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #ff9c07;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-out;
+}
+  
+.site-header .nav-link:hover:before {
+    visibility: visible;
+    left: 0;
+    transform: scaleX(1);
+}
+  
+#page-attractions {
+    background: #E1F7F5;
+}
+  
+.layout-attractions .layout-image {
+    transition: all 0.3s ease-out;
+}
+  
+.layout-attractions .layout-image:hover {
+    transform: scale(1.1) translateY(-3px);
+}
+  
+.page-section-header .page-section-title {
+    font-size: 4em;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 200;
+    color: #533777;
+}
+  
+.page-section-header .page-section-text {
+    font-size: 1.2em;
+    font-weight: 200;
+}
+  
+.layout-media .layout-image {
+    max-width: 200px;
+    padding-right: 1em;
+}
+  
+.layout-media .layout-title {
+    color: #533777;
+    font-family: 'Merriweather', serif;
+    font-weight: 200;
+    font-size: 1.6em;
+}
+
+#page-media {
+    background: #eaffed;
+}
+
+#page-iconcolumns {
+    background-color: #E1F7F5;
+}
+  
+.layout-photogrid .layout-image {
+    background: #e3bef8;
+    height: 425px;
+    width: 425px;
+}
+  
+#page-floater {
+    background: #E1F7F5;
+}
+
+#page-map {
+    background-color: #eaffed;
+}
+
+.map {
+    height: 500px;
+    width: 500px;
+    padding: 2em;
+}
+
+footer {
+    background-color: #35383a;
+}
+
+footer a {
+    color: #8c5ec7;
+}
+  
+@media screen and (min-width: 768px) {
+
+    #page-floater {
+      margin: 150px 0 150px 0;
+    }
+  
+    .layout-floater .layout-container {
+      position: relative;
+    }
+  
+    .layout-floater .layout-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(15deg)
+        scale(1.1);
+    }
+
+    .layout-photogrid {
+        margin: 0;
+    }
+}
