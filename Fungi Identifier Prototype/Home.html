@@ -1,0 +1,249 @@
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author: Taylor Harris #
+#Date Created: 4/24/22 #
+#Version: 1 #
+#Date Last Modified: 4/29/22 #
+#Modified by: Taylor Harris #
+#Modification log:              #
+4/24/22 - Created site, sidebar, and home section.
+4//22 - Created portfolio section.
+4//22 - Added more to portfolio section.
+4//22 - Created contact and footer sections.
+4//22 - Added scrollbar, nav, and home animations.
+4//22 - Worked on mobile responsiveness, and fixing portfolio section up.
+4//22 - Worked on mobile responsiveness, fixed footer.
+4/28/22 - Touched up all mobile responsiveness for all elements.
+--
+------------------------------------------------------------------------------------------------------------------>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="assets/js/lib/fontawesome-all.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Fungi Identifier</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/mushroomdesign.png" alt="Mushy the Mushroom">
+</head>
+
+<body>
+    <!-- SIDEBAR -->
+    <div class="nav__toggle" id="nav-toggle">
+        <i class="uil uil-bars"></i>
+    </div>
+    <aside class="sidebar" id="sidebar">
+        <nav class="nav">
+
+            <div class="nav__menu">
+                <div class="menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="Identify.html" class="nav__link">Identify</a>
+                        </li>
+                        <!-- <li class="nav__item">
+                            <a href="#my__fungi" class="nav__link">My Fungi</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#fungi__near-me" class="nav__link">Fungi Near Me</a>
+                        </li> -->
+                        <li class="nav__item">
+                            <a href="Recipes.html" class="nav__link">Recipes</a>
+                        </li>
+                        <!-- <li class="nav__item">
+                            <a href="#guides__free" class="nav__link">Free Monthly Guide</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#guides__all" class="nav__link">All Guides</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="nav__close" id="nav-close">
+                <i class="uil uil-times"></i>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+        <!-- HOME -->
+        <section class="home section" id="home">
+            <div id="identify__logo">
+                <img src="assets/images/logodesign.png">
+            </div>
+            <!-- <h2 data-heading="Welcome To" class="section__title">Fungi Identifier</h2> -->
+
+            <div class="home__container container grid">
+                <img class="home__img" src="assets/images/mushydesign.png" alt="Mushy the Mushroom">
+
+                <div class="home__data">
+                    <h3 class="home__heading">Hi, I'm Mushy! It's pronounced moo-shē.</h3>
+                    <p class="home__description">I'm the #1 detective for fungi identification. Fun fact: I am a
+                        Toadstool mushroom! My species is considered to be "inedible" and "toxic".
+                    <p class="home__description">Here you can find out all sorts of information about both edible and
+                        toxic fungis; like
+                        descriptions to help identify, where they're commonly found, and some fun facts! I also have
+                        information on super colorful fungis that are too cool to be true!</p>
+                    <p class="home__description">Feel free to contact me, Mushy, if you have a fungi-related questions I
+                        can answer for you.
+                        Sign up for my newsletter to get all the latest tips, tricks, and info!</p>
+                    <br>
+                    <section class="home__newsletter">
+                        <div class="newsletter">
+                            <form id="join_newsletter" name="join_newsletter">
+
+                                <div>
+                                    <label for="news_firstName">First Name:&nbsp;</label>
+                                    <input type="text" id="news_firstName" name="news_firstName">
+                                    <span>*</span>
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="news_email1">Email Address:&nbsp;</label>
+                                    <input type="text" id="news_email1" name="news_email1">
+                                    <span>*</span>
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="news_email2">Confirm Email Address:&nbsp;</label>
+                                    <input type="text" id="news_email2" name="news_email2">
+                                    <span>*</span>
+                                </div>
+                                <div>
+                                    <label>&nbsp;</label>
+                                    <input type="button" id="join" class="newsletter__button" value="Join Newsletter">
+                                </div>
+
+                            </form>
+                        </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <!-- <section class="contact section" id="contact">
+            <h2 data-heading="Get In Touch" class="section__title">Contact Me</h2>
+
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class="uil uil-envelope-edit contact__card-icon"></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">taylorharris2@my.cwi.edu</span>
+                            <span class="contact__button">
+                                Email me <i class="uil uil-arrow-right contact__button-icon"></i>
+                            </span>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class="uil uil-facebook-messenger contact__card-icon"></i>
+                            <h3 class="contact__card-title">Messenger</h3>
+                            <span class="contact__card-data">m.me/taylor.harris.1447</span>
+                            <span class="contact__button">
+                                Message me <i class="uil uil-arrow-right contact__button-icon"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <form action="" class="contact__form">
+                        <div class="input__container">
+                            <input type="text" class="input" id="name">
+                            <label for="">Name</label>
+                            <span>Name</span>
+                        </div>
+                        <div class="input__container">
+                            <input type="email" class="input" id="email_1">
+                            <label for="">Email</label>
+                            <span>Email</span>
+                        </div>
+                        <div class="input__container">
+                            <input type="email" class="input" id="email_2">
+                            <label for="">Confirm Email</label>
+                            <span>Confirm Email</span>
+                        </div>
+                        <div class="input__container">
+                            <input type="tel" class="input" id="phone">
+                            <label for="">Phone</label>
+                            <span>Phone</span>
+                        </div>
+                        <div class="input__container textarea">
+                            <textarea name="message" id="message" class="input"></textarea>
+                            <label for="">Message</label>
+                            <span>Message</span>
+                        </div>
+                        <button type="submit" class="button" id="submit"><i class="uil uil-navigator button__icon"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <!-- <div>
+                <h1 class="footer__title">Taylor Harris</h1>
+                <span class="footer__subtitle">1st Year Front-End Software Development Student</span>
+            </div> -->
+
+            <!-- <div class="footer__container">
+                <p class="footer__title">Collect them all!</p>
+                <ul class="footer__collectables">
+                    <li><img src="assets/images/small-mushydesign.png" alt="" class="collectible"></li>
+                    <li><img src="assets/images/small-mushydesign.png" alt="" class="collectible"></li>
+                    <li><img src="assets/images/small-mushydesign.png" alt="" class="collectible"></li>
+                    <li><img src="assets/images/small-mushydesign.png" alt="" class="collectible"></li>
+                    <li><img src="assets/images/small-mushydesign.png" alt="" class="collectible"></li>
+                    <li><img src="assets/images/small-mushydesign.png" alt="" class="collectible"></li>
+                    <li><img src="assets/images/small-mushydesign.png" alt="" class="collectible"></li>
+                </ul> -->
+                <p>&copy; Copyright 2022</p>
+            </div>
+
+            <!-- <div class="footer__socials">
+                <a href="https://github.com/TaylorAleseHarris/TaylorAleseHarris.github.io" target="_blank"
+                    class="footer__social">
+                    <i class="uil uil-github"></i>
+                </a>
+                <a href="https://codesandbox.io/u/TaylorAleseHarris" target="_blank" class="footer__social">
+                    <i class="uil uil-square"></i>
+                </a>
+                <a href="https://linkedin.com/in/taylor-harris-530067233" target="_blank" class="footer__social">
+                    <i class="uil uil-linkedin"></i>
+                </a>
+            </div> -->
+
+        </footer>
+
+    </main>
+
+
+    <!-- MIXITUP FILTER -->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- FORM JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="assets/js/form.js"></script>
+
+</body>
+
+</html>

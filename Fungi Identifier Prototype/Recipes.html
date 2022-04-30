@@ -1,0 +1,306 @@
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author: Taylor Harris #
+#Date Created: 4/24/22 #
+#Version: 1 #
+#Date Last Modified: 4/28/22 #
+#Modified by: Taylor Harris #
+#Modification log:              #
+4/24/22 - Created page.
+4/25/22 - Added recipes section.
+4/28/22 - Touched up all mobile responsiveness.
+--
+------------------------------------------------------------------------------------------------------------------>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="assets/js/lib/fontawesome-all.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Fungi Identifier</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/mushroomdesign.png" alt="Mushy the Mushroom">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <div class="nav__toggle" id="nav-toggle">
+        <i class="uil uil-bars"></i>
+    </div>
+    <aside class="sidebar" id="sidebar">
+        <nav class="nav">
+
+            <div class="nav__menu">
+                <div class="menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="Home.html" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="Identify.html" class="nav__link">Identify</a>
+                        </li>
+                        <!-- <li class="nav__item">
+                            <a href="#my__fungi" class="nav__link">My Fungi</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#fungi__near-me" class="nav__link">Fungi Near Me</a>
+                        </li> -->
+                        <li class="nav__item">
+                            <a href="Recipes.html" class="nav__link active-link">Recipes</a>
+                        </li>
+                        <!-- <li class="nav__item">
+                            <a href="#guides__free" class="nav__link">Free Monthly Guide</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#guides__all" class="nav__link">All Guides</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="nav__close" id="nav-close">
+                <i class="uil uil-times"></i>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <section class="recipes section" id="identify">
+            <div id="identify__logo">
+                <img src="assets/images/completedesign.png">
+            </div>
+            <!-- <h2 data-heading="Let's" class="section__title">Identify!</h2> -->
+
+            <div class="recipes__container container grid">
+                <img class="recipe__img" src="assets/images/chanterelle_shazam.jpg" alt="Chanterelle Shazam" />
+                <div class="container__text">
+                    <h1>Chanterelle Shazam</h1>
+                    <div class="container__text__star">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>
+                        A simple, safe, and tasty way to prepare delicious fresh chanterelle mushrooms, which are so
+                        abundant in Northwest forests during the fall season. They have a sweet, peach-like flavor
+                        that is enhanced by red wine and a wonderful complement to meat. This is a hearty side dish
+                        to accompany your favorite grilled meat like a flatiron steak or other favorite red meat.
+                    </p>
+                    <div class="container__text__timing">
+                        <div class="container__text__timing_time">
+                            <h2 class="recipe__title-tag">Prep Time</h2>
+                            <p class="recipe__sub-tag">15 min</p>
+                        </div>
+                        <div class="container__text__timing_time">
+                            <h2 class="recipe__title-tag">Cook Time</h2>
+                            <p class="recipe__sub-tag">13 min</p>
+                        </div>
+                        <div class="container__text__timing_time">
+                            <h2 class="recipe__title-tag">Servings</h2>
+                            <p class="recipe__sub-tag">4</p>
+                        </div>
+                    </div>
+
+                    <p class="recipe__description"><span id="dots">...</span><span id="more">Ingredients:<br>
+                            - 3 tbsp olive oil<br>
+                            - 2 cloves crushed garlic<br>
+                            - 1 lb fresh wild chanterelle mushrooms, cleaned and quartered<br>
+                            - 1 tsp butter<br>
+                            - 1 pinch kosher salt and freshly ground pepper to taste<br>
+                            - 1/2 cup port<br><br>
+                            Step 1: Heat olive oil in a cast iron skillet over medium heat until sizzling but not
+                            smoking. Stir in garlic. Add chanterelles and butter. Reduce heat to medium-low and
+                            cook, stirring frequently, until most of the excess liquid evaporates, about 10 mins.
+                            Season with salt and pepper.<br><br>
+                            Step 2: Increase heat to high and carefully pour port into the skillet; stir until
+                            reduced, about 2 mins. Serve steaming hot.
+                        </span></p>
+                    <button onclick="myFunction1()" class="recipe__button" id="recipe__btn1">Read more</button>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="recipes__container container grid">
+                <img class="recipe__img" src="assets/images/blacktruffle_pasta.jpg" alt="Black Truffle Pasta" />
+                <div class="container__text">
+                    <h1>Black Truffle Pasta</h1>
+                    <div class="container__text__star">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>
+                        This Black Truffle Pasta recipe is gourmet comfort food at its finest. Featuring a creamy
+                        carbonara-like sauce flavored with black truffle butter, golden-brown sautéed mushrooms, and
+                        ofcourse shavings of fresh truffle (which is optional but so very fancy).
+                    </p>
+                    <div class="container__text__timing">
+                        <div class="container__text__timing_time">
+                            <h2 class="recipe__title-tag">Prep Time</h2>
+                            <p class="recipe__sub-tag">10 min</p>
+                        </div>
+                        <div class="container__text__timing_time">
+                            <h2 class="recipe__title-tag">Cook Time</h2>
+                            <p class="recipe__sub-tag">25 min</p>
+                        </div>
+                        <div class="container__text__timing_time">
+                            <h2 class="recipe__title-tag">Servings</h2>
+                            <p class="recipe__sub-tag">4</p>
+                        </div>
+                    </div>
+
+                    <p class="recipe__description"><span id="dots">...</span><span id="more">Ingredients:<br>
+                            - 4 large egg yolks<br>
+                            - 2 large eggs<br>
+                            - 2 oz grated Parmesan + more for serving (½ cup)<br>
+                            - 1 pinch of kosher salt and freshly ground black pepper<br>
+                            - 2 tbsp extra-virgin olive oil<br>
+                            - 8 oz shiitake mushrooms, trimmed and sliced into ¼ inch-thick slices<br>
+                            - 1 lb dry bucatini, spaghetti, or tagliatelle noodles<br>
+                            - 2 tbsp truffle butter (homemade or store bought)<br>
+                            - 1 truffle, black or white, shaved or thinly sliced<br><br>
+                            Step 1: Bring a large pot of water to a boil. Whisk egg yolks and eggs in a medium bowl
+                            until no streaks remain, whisk in Parmesan; season with pepper. Heat 2 tbsp oil in a
+                            large Dutch oven or pot over medium-high. Add mushrooms and cook, stirring occasionally,
+                            until golden brown, about 10 mins. Transfer mushrooms to a plate. <br><br>
+                            Step 2: Season boiling water with 2 tbsp kosher salt, add pasta and cook 2 mins
+                            less than package instructions, stirring occasionally. Measure out 1 ¾ cups pasta cooking
+                            water. Add 1 cup cooking water and truffle butter to Dutch oven; bring mixture to a boil
+                            over medium-high. Drain pasta then transfer to Dutch oven.<br><br>
+                            Step 3: Cook pasta, stirring and gently tossing constantly with tongs, until al dente and
+                            water is reduced by about half; about 2 mins. Remove pot from heat. Whisk ¼ cup reserved
+                            pasta cooking water into egg mixture. Slowly stream egg mixture into pasta, stirring and
+                            gently tossing constantly with tongs, until cheese is melted and egg is thickened to form a
+                            glossy sauce on the pasta. Thin sauce with remaining ½ cup reserved pasta cooking water,
+                            adding a 1–2 tbsp at a time, until consistency of heavy cream is reached. Season to
+                            taste with additional truffle butter and salt.<br><br>
+                            Step 4: Mix in mushrooms and divide pasta among serving bowls. Top with thin shavings of
+                            truffle, ground pepper and additional parmesan.
+                        </span></p>
+                    <button onclick="myFunction2()" class="recipe__button" id="recipe__btn2">Read more</button>
+                    <!-- <button class="recipe__btn">View Recipe <i class="fa fa-arrow-right recipe__arrow"></i></button> -->
+                </div>
+            </div>
+
+            <br>
+
+            <div class="recipes__container container grid">
+                <img class="recipe__img" src="assets/images/stuffed_portobello.jpg"
+                    alt="Asparagus-Stuffed Portobello" />
+                <div class="container__text">
+                    <h1>Asparagus-Stuffed Portobello</h1>
+                    <div class="container__text__star">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>
+                        A simple, safe, and tasty way to prepare delicious fresh chanterelle mushrooms, which are so
+                        abundant in Northwest forests during the fall season. They have a sweet, peach-like flavor
+                        that is enhanced by red wine and a wonderful complement to meat. This is a hearty side dish
+                        to accompany your favorite grilled meat like a flatiron steak or other favorite red meat.
+                    </p>
+                    <div class="container__text__timing">
+                        <div class="container__text__timing_time">
+                            <h2 class="recipe__title-tag">Prep Time</h2>
+                            <p class="recipe__sub-tag">15 min</p>
+                        </div>
+                        <div class="container__text__timing_time">
+                            <h2 class="recipe__title-tag">Cook Time</h2>
+                            <p class="recipe__sub-tag">13 min</p>
+                        </div>
+                        <div class="container__text__timing_time">
+                            <h2 class="recipe__title-tag">Servings</h2>
+                            <p class="recipe__sub-tag">4</p>
+                        </div>
+                    </div>
+
+                    <p class="recipe__description"><span id="dots">...</span><span id="more">Ingredients:<br>
+                            - 4 large portabello mushrooms (1 to 1 ¼ lbs)<br>
+                            - 1 tbsp + 2 tsp olive oil, divided<br>
+                            - 1 ½ cups cut fresh asparagus (about 5 oz spears)<br>
+                            - 1 large plum tomato, diced (½ cup)<br>
+                            - ¼ tsp salt<br>
+                            - ¼ tsp freshly ground black pepper<br>
+                            - 1 cup fresh multigrain bread crumbs<br>
+                            - ¼ cup grated Romano or Parmesan cheese<br><br>
+                            Step 1: Preheat oven to 400F. Clean mushroom caps with a damp paper towel. Cut off stems
+                            from mushroom caps; rinse under cold water. Coarsely chop stems and set aside. Use a spoon
+                            or paring knife to scrape out and discard gills from mushroom caps. Brush 2 teaspoons of the
+                            oil over mushroom caps; place oiled sides down on a 15 x 10 inch jelly roll pan or baking
+                            sheet.<br><br>
+                            Step 2: Heat remaining 1 tablespoon oil in a nonstick skillet over medium-high heat. Add
+                            asparagus, shallots, garlic and chopped mushroom stems. Cook 5 to 6 minutes or until
+                            vegetables are crisp-tender, stirring occasionally. Remove from heat; stir in tomato, salt
+                            and pepper. Spoon mixture into mushroom caps. Combine bread crumbs and cheese; sprinkle
+                            evenly over mushrooms. Bake 10 to 12 minutes or until hot and crumbs are golden brown.
+                            Yield: 4 servings (serving size: 1 stuffed mushroom cap).
+                        </span></p>
+                    <button onclick="myFunction3()" class="recipe__button" id="recipe__btn3">Read more</button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <!-- <div>
+                        <h1 class="footer__title">Taylor Harris</h1>
+                        <span class="footer__subtitle">1st Year Front-End Software Development Student</span>
+                    </div> -->
+
+            <!-- <div class="footer__container">
+                        <p class="footer__title">Collect them all!</p>
+                        <ul class="footer__collectables">
+                            <li><img src="assets/images/small-mushydesign.png" alt="" class="collectible"></li>
+                            <li><img src="assets/images/small-mushydesign.png" alt="" class="collectible"></li>
+                            <li><img src="assets/images/small-mushydesign.png" alt="" class="collectible"></li>
+                            <li><img src="assets/images/small-mushydesign.png" alt="" class="collectible"></li>
+                            <li><img src="assets/images/small-mushydesign.png" alt="" class="collectible"></li>
+                            <li><img src="assets/images/small-mushydesign.png" alt="" class="collectible"></li>
+                            <li><img src="assets/images/small-mushydesign.png" alt="" class="collectible"></li>
+                        </ul> -->
+            <p>&copy; Copyright 2022</p>
+            </div>
+
+            <!-- <div class="footer__socials">
+                        <a href="https://github.com/TaylorAleseHarris/TaylorAleseHarris.github.io" target="_blank"
+                            class="footer__social">
+                            <i class="uil uil-github"></i>
+                        </a>
+                        <a href="https://codesandbox.io/u/TaylorAleseHarris" target="_blank" class="footer__social">
+                            <i class="uil uil-square"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/taylor-harris-530067233" target="_blank" class="footer__social">
+                            <i class="uil uil-linkedin"></i>
+                        </a>
+                    </div> -->
+
+        </footer>
+
+    </main>
+
+    <!-- MAIN JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+</body>
+
+</html>

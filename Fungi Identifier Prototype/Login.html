@@ -1,0 +1,67 @@
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author: Taylor Harris #
+#Date Created: 4/24/22 #
+#Version: 1 #
+#Date Last Modified: 4/28/22 #
+#Modified by: Taylor Harris #
+#Modification log:              #
+4/24/22 - Created login page.
+4/28/22 - Touched up mobile responsiveness.
+--
+------------------------------------------------------------------------------------------------------------------>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!---->
+    <title>Fungi Indentifier Login Page</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/mushroomdesign.png" alt="Mushy the Mushroom">
+
+    <style>
+        body {
+            background-color: rgb(61, 0, 102);
+        }
+    </style>
+</head>
+
+<body>
+    <main class="center" id="login">
+
+        <img id="logo1" src="assets/images/logodesign.png" alt="Logo">
+
+        <div class="form">
+            <form id="login-form">
+                <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+                <input type="password" name="password" id="password-field" class="login-form-field"
+                    placeholder="Password">
+                <!-- <input type="submit" value="Login" class="login__button" id="login-form-submit"> -->
+                <p>Or sign in with:</p>
+                <div class="login__socials">
+                    <a href="#"><img id="google__icon" src="assets/images/iconmonstr-google-4-24.png"></a>
+                    <a href="#"><img id="facebook__icon" src="assets/images/iconmonstr-facebook-4-24.png"></a>
+                </div>
+            </form>
+            <br>
+            <div>
+                <button class="login__button"><a href="Home.html">Login</a></button>
+            </div>
+            <br>
+            <div class="center">
+                <p>Don't have an account?</p>
+                <a href="#">Sign up!</a>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

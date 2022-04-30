@@ -1,0 +1,426 @@
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author: Taylor Harris #
+#Date Created: 4/24/22 #
+#Version: 1 #
+#Date Last Modified: 4/29/22 #
+#Modified by: Taylor Harris #
+#Modification log:              #
+4/24/22 - Created page.
+4/25/22 - Added identify section.
+4/26/22 - Added Info modals.
+4/27/22 - Added wild photos.Worked on mobile responsiveness.
+4/28/22 - Touched up all mobile responsiveness for all elements.
+--
+------------------------------------------------------------------------------------------------------------------>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="assets/js/lib/fontawesome-all.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Fungi Identifier</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/mushroomdesign.png" alt="Mushy the Mushroom">
+</head>
+
+<body>
+    <!-- SIDEBAR -->
+    <div class="nav__toggle" id="nav-toggle">
+        <i class="uil uil-bars"></i>
+    </div>
+    <aside class="sidebar" id="sidebar">
+        <nav class="nav">
+
+            <div class="nav__menu">
+                <div class="menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="Home.html" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="Identify.html" class="nav__link active-link">Identify</a>
+                        </li>
+                        <!-- <li class="nav__item">
+                            <a href="#my__fungi" class="nav__link">My Fungi</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#fungi__near-me" class="nav__link">Fungi Near Me</a>
+                        </li> -->
+                        <li class="nav__item">
+                            <a href="Recipes.html" class="nav__link">Recipes</a>
+                        </li>
+                        <!-- <li class="nav__item">
+                            <a href="#guides__free" class="nav__link">Free Monthly Guide</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#guides__all" class="nav__link">All Guides</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="nav__close" id="nav-close">
+                <i class="uil uil-times"></i>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <!-- IDENTIFY -->
+        <section class="work section" id="identify">
+            <div id="identify__logo">
+                <img src="assets/images/completedesign.png">
+            </div>
+            <!-- <h2 data-heading="Let's" class="section__title">Identify!</h2> -->
+
+            <div class="work__filters">
+                <span class="work__item active-work" data-filter="all">All</span>
+                <span class="work__item" data-filter=".edible">Edible</span>
+                <span class="work__item" data-filter=".toxic">Toxic</span>
+            </div>
+
+            <div class="work__container container grid">
+
+                <div class="work__card mix edible">
+                    <img src="assets/images/chanterellemushrooms.jpg" class="work__img" alt="Chanterelle Mushrooms">
+                    <h3 class="work__title">Chanterelle Mushrooms</h3>
+                    <span class="work__button work__button-edible">Info
+                        <i class="uil uil-search-alt work__button-icon"></i>
+                    </span>
+
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title details__title-edible">Chanterelle Mushrooms</h3>
+                        <ul class="details__info">
+                            <li>Orange, yellow or white, meaty and funnel-shaped. On the lower surface, underneath the
+                                smooth cap, most species have rounded, forked folds that run almost all the way down the
+                                stipe, which tapers down seamlessly from the cap. They emit a fruity aroma, and often
+                                have a mildly peppery taste.</li>
+                            <li>Common in Europe, North America, and Africa. They tend to grow in clusters in mossy
+                                coniferous forests, but are also often found in mountainous birch forests, and among
+                                grasses and low-growing herbs.</li>
+                            <li>If you cook with Chanterelle mushrooms, you should use them in a dry sauté because they
+                                have such a high water content that they will soon be cooking in the water anyway. They
+                                smell and taste a little fruity and peppery, and they are perfect as a topping for
+                                entrees.</li>
+                            <p class="wild">In The Wild:<img class="wild-img"
+                                    src="assets/images/wildchanterellemushrooms.jpg"></p>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work__card mix edible">
+                    <img src="assets/images/hedgehogmushrooms.jpg" class="work__img" alt="Hedgehog Mushrooms">
+                    <h3 class="work__title">Hedgehog Mushrooms</h3>
+                    <span class="work__button work__button-edible">Info
+                        <i class="uil uil-search-alt work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title details__title-edible">Hedgehog Mushrooms</h3>
+                        <ul class="details__info">
+                            <li>Pale pink or salmon to a cream color, to yellow or even dark orange. Their caps are
+                                irregularly shaped with flat, somewhat concave tops. The spiky, hedgehog-like “spines”
+                                on the underside of the cap are detachable and will come off if you rub your fingers
+                                along them.</li>
+                            <li>Found nestling in grass and moss beneath spruce, pine, birch and beech trees. They grow
+                                in rings or arcs around host trees in most types of mixed woodland.</li>
+                            <li>Also known as the Sweet Tooth mushroom, this mushroom smells and tastes sweet, unless it
+                                is an older mushroom, in which case it may taste a little bitter. It also has a meaty,
+                                nutty, and crunchy taste.</li>
+                            <p class="wild">In The Wild:<img class="wild-img"
+                                    src="assets/images/wildhedgehogmushrooms.jpg"></p>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work__card mix edible">
+                    <img src="assets/images/blacktruffles.jpg" class="work__img" alt="Black Truffle Mushrooms">
+                    <h3 class="work__title">Black Truffle Mushrooms</h3>
+                    <span class="work__button work__button-edible">Info
+                        <i class="uil uil-search-alt work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title details__title-edible">Black Truffle Mushrooms</h3>
+                        <ul class="details__info">
+                            <li>Dark/black mushrooms with bumpy outer skin, and an aromatic scent.</li>
+                            <li>Found in the mountains of Southern Europe.</li>
+                            <li>The black truffle is the most expensive (up to $1,500 per pound) of all truffles, and
+                                also one of the most famous. These truffles have many different names due to their
+                                color. They are a fairly rare occurrence. It is thought that they have been growing
+                                since the Triassic Period, over 250 million years ago.</li>
+                            <p class="wild">In The Wild:<img class="wild-img" src="assets/images/wildblacktruffles.jpg">
+                            </p>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work__card mix edible">
+                    <img src="assets/images/blacktrumpetmushrooms.jpg" class="work__img" alt="Black Trumpet Mushrooms">
+                    <h3 class="work__title">Black Trumpet Mushrooms</h3>
+                    <span class="work__button work__button-edible">Info
+                        <i class="uil uil-search-alt work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title details__title-edible">Black Trumpet Mushrooms</h3>
+                        <ul class="details__info">
+                            <li>Dark/black, tender and somewhat fragile funnel or horn-shaped mushroom.</li>
+                            <li>Found most often growing as large clusters in damp deciduous forests of the East and
+                                Midwest late in the summer, and all winter long in the West.</li>
+                            <li>Also known as the Horn of Plenty mushroom or the Trumpet of the Dead mushroom, they have
+                                a smoky, rich flavor and when dried, they are similar to the Black Truffle mushroom.
+                            </li>
+                            <p class="wild">In The Wild:<img class="wild-img" src="assets/images/wildblacktrumpets.jpg">
+                            </p>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work__card mix edible">
+                    <img src="assets/images/porcinimushrooms.jpg" class="work__img" alt="Porcini Mushrooms">
+                    <h3 class="work__title">Porcini Mushrooms</h3>
+                    <span class="work__button work__button-edible">Info
+                        <i class="uil uil-search-alt work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title details__title-edible">Porcini Mushrooms</h3>
+                        <ul class="details__info">
+                            <li>Red-brown to dark brown caps that are smooth, slightly sticky (and are convex when
+                                young, flattening out with age). Very thick and dense, cream-colored stem with small
+                                ridges on the bottom portion. Underneath the cap, there are many ivory, spongy tubes
+                                which release green-brown spores to propagate.</li>
+                            <li>Found in grasslands of Europe and North America.</li>
+                            <li>Porcini mushrooms are very meaty and flavorful, and they are often found in numerous
+                                Italian dishes. Much like sourdough, Porcini mushrooms have a flavor and taste that is
+                                creamy and nutty. The flesh is white and solid when sliced and emits a yeasty aroma
+                                reminiscent of sourdough.</li>
+                            <p class="wild">In The Wild:<img class="wild-img"
+                                    src="assets/images/wildporcinimushrooms.jpg"></p>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work__card mix edible">
+                    <img src="assets/images/shiitakemushrooms.jpg" class="work__img" alt="Shiitake Mushrooms">
+                    <h3 class="work__title">Shiitake Mushrooms</h3>
+                    <span class="work__button work__button-edible">Info
+                        <i class="uil uil-search-alt work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title details__title-edible">Shiitake Mushrooms</h3>
+                        <ul class="details__info">
+                            <li>Brown, convex (umbrella-like) caps, with off-white gills and tan stems.</li>
+                            <li>Found mostly in areas such as Korea, China, and Japan.</li>
+                            <li>Very commonly found in a variety of Asian dishes. Like Portobello mushrooms, Shiitake
+                                mushrooms are chewy and meaty.</li>
+                            <p class="wild">In The Wild:<img class="wild-img"
+                                    src="assets/images/wildshiitakemushrooms.jpg"></p>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work__card mix edible">
+                    <img src="assets/images/portobellomushrooms.jpg" class="work__img" alt="Portobello Mushrooms">
+                    <h3 class="work__title">Portobello Mushrooms</h3>
+                    <span class="work__button work__button-edible">Info
+                        <i class="uil uil-search-alt work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title details__title-edible">Portobello Mushrooms</h3>
+                        <ul class="details__info">
+                            <li>Brown with a large, flat cap and dark brown gills.</li>
+                            <li>Found in grasslands of Europe and North America.</li>
+                            <li>When white button mushrooms fully mature, their caps grow outwards and they are called
+                                Portobello mushrooms. With its mild flavor and somewhat meaty texture, you can even use
+                                these types of mushrooms as a substitute for meat in many dishes. Some people consider
+                                them one of the tastiest mushrooms in existence.</li>
+                            <p class="wild">In The Wild:<img class="wild-img"
+                                    src="assets/images/wildportobellomushrooms.jfif"></p>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work__card mix edible">
+                    <img src="assets/images/beechmushrooms.jpg" class="work__img" alt="Beech Mushrooms">
+                    <h3 class="work__title">Beech Mushrooms</h3>
+                    <span class="work__button work__button-edible">Info
+                        <i class="uil uil-search-alt work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title details__title-edible">Beech Mushrooms</h3>
+                        <ul class="details__info">
+                            <li>White stemmed mushrooms with brown caps.</li>
+                            <li>Found growing on Beech trees.</li>
+                            <li>Beech mushrooms, also called Clamshell mushrooms. These mushrooms have caps that are
+                                brown and a crunchy, but sweet and nutty flavor. However, this only applies when they
+                                are cooked, which is the best way to eat them. If they are eaten raw, you will notice a
+                                bitter taste that you're not likely to be fond of.</li>
+                            <p class="wild">In The Wild:<img class="wild-img"
+                                    src="assets/images/wild-beech-mushrooms.jpg"></p>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work__card mix toxic">
+                    <img src="assets/images/wildrussulamushroom.jpg" class="work__img" alt="Russula Emetica">
+                    <h3 class="work__title">Russula Emetica <i class="uil uil-exclamation-triangle toxic"></i></h3>
+                    <span class="work__button work__button-toxic">Info
+                        <i class="uil uil-search-alt work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title details__title-toxic">Russula Emetica</h3>
+                        <ul class="details__info">
+                            <li>White stemmed mushrooms with red caps, and a faint, fruity odor.</li>
+                            <li>Found mainly beneath conifers (pines and spruces in particular) and occasionally also on
+                                mossy (fairly wet) heathland.</li>
+                            <li>Also known as The Sickener. Poisonous when eaten raw or poorly cooked, and can cause
+                                nausea and vomiting, followed by severe stomach pains and diarrhea.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work__card mix toxic">
+                    <img src="assets/images/wildredtoadstoolmushroom.jpg" class="work__img" alt="Amanita Muscaria">
+                    <h3 class="work__title">Amanita Muscaria <i class="uil uil-exclamation-triangle toxic"></i></h3>
+                    <span class="work__button work__button-toxic">Info
+                        <i class="uil uil-search-alt work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title details__title-toxic">Amanita Muscaria</h3>
+                        <ul class="details__info">
+                            <li>Spore-bearing, fruiting body typically in the form of a bright red and white-spotted,
+                                rounded cap on a white stem.</li>
+                            <li>Found near evergreen and deciduous trees in temperate and subarctic regions of the
+                                Northern Hemisphere.</li>
+                            <li>Sometimes referred to as "Toadstool Mushrooms" because they look like the spot where
+                                toads would sit. Toadstools are fungi widely believed to be inedible or toxic.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work__card mix toxic">
+                    <img src="assets/images/wild-amanita-virosa.png" class="work__img" alt="Amanita Virosa">
+                    <h3 class="work__title">Amanita Virosa <i class="uil uil-exclamation-triangle toxic"></i></h3>
+                    <span class="work__button work__button-toxic">Info
+                        <i class="uil uil-search-alt work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title details__title-toxic">Amanita Virosa</h3>
+                        <ul class="details__info">
+                            <li>When young, these mushrooms appear as white egg-shaped objects covered with a universal
+                                veil. As they grow, the mushroom breaks free, though there may be ragged patches of the
+                                veil remaining at the cap edges.</li>
+                            <li>Native to Europe, not found in North America. They are found in mixed oak-hardwood
+                                conifer forests, other natural areas, or in the landscape. Found either singly or in
+                                small groups.</li>
+                            <li>Sometimes referred to as "Destroying Angels". These incredibly toxic fungi are very
+                                similar in appearance to edible button mushrooms and the meadow mushrooms, and have been
+                                collected by mistake on numerous occassions. Symptoms take 5 to 24 hours to appear and
+                                include vomiting, delirium, convulsions, diarrhea, liver and kidney failure, and often
+                                lead to death.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work__card mix toxic">
+                    <img src="assets/images/wild-conocybe-filaris.png" class="work__img" alt="Conocybe Filaris">
+                    <h3 class="work__title">Conocybe Filaris <i class="uil uil-exclamation-triangle toxic"></i></h3>
+                    <span class="work__button work__button-toxic">Info
+                        <i class="uil uil-search-alt work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title details__title-toxic">Conocybe Filaris</h3>
+                        <ul class="details__info">
+                            <li>These mushrooms are delicate. They have reddish-brown, bell shaped caps with long,
+                                fragile stems.</li>
+                            <li>Growing in grasslands on dead moss, dead grass, sand dunes, decayed wood, and dung.
+                                Conocybe species generally prefer fertile soils in lawns and pastures and are found
+                                worldwide. An innocent-looking lawn mushroom that is especially common in the Pacific
+                                Northwest.</li>
+                            <li>Potentially fatal if eaten. The onset of gastrointestinal symptoms often occurs 6-24
+                                hours after the mushrooms were consumed, frequently leading to an initial misdiagnosis
+                                of food poisoning or the stomach flu. The patient may appear to recover, only to suffer
+                                from a life-threatening reappearance of the gastrointestinal distress, coupled with
+                                liver and kidney failure.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PORTFOLIO POPUPS -->
+        <div class="portfolio__popup">
+            <div class="portfolio__popup-inner">
+                <div class="portfolio__popup-content grid">
+                    <span class="portfolio__popup-close"><i class="uil uil-times"></i></span>
+                    <div class="pp__thumbnail">
+                        <img src="assets/images/iconmonstr-code-thin-240.png" alt="" class="portfolio__popup-img"
+                            alt="code icon">
+                    </div>
+                    <div class="portfolio__popup-info">
+                        <div class="portfolio__popup-body">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <!-- <div>
+                        <h1 class="footer__title">Taylor Harris</h1>
+                        <span class="footer__subtitle">1st Year Front-End Software Development Student</span>
+                    </div> -->
+
+            <!-- <div class="footer__container">
+                        <p class="footer__title">Collect them all!</p>
+                        <ul class="footer__collectables">
+                            <li><img src="assets/images/small-mushydesign.png" alt="" class="collectible"></li>
+                            <li><img src="assets/images/small-mushydesign.png" alt="" class="collectible"></li>
+                            <li><img src="assets/images/small-mushydesign.png" alt="" class="collectible"></li>
+                            <li><img src="assets/images/small-mushydesign.png" alt="" class="collectible"></li>
+                            <li><img src="assets/images/small-mushydesign.png" alt="" class="collectible"></li>
+                            <li><img src="assets/images/small-mushydesign.png" alt="" class="collectible"></li>
+                            <li><img src="assets/images/small-mushydesign.png" alt="" class="collectible"></li>
+                        </ul> -->
+            <p>&copy; Copyright 2022</p>
+            </div>
+
+            <!-- <div class="footer__socials">
+                        <a href="https://github.com/TaylorAleseHarris/TaylorAleseHarris.github.io" target="_blank"
+                            class="footer__social">
+                            <i class="uil uil-github"></i>
+                        </a>
+                        <a href="https://codesandbox.io/u/TaylorAleseHarris" target="_blank" class="footer__social">
+                            <i class="uil uil-square"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/taylor-harris-530067233" target="_blank" class="footer__social">
+                            <i class="uil uil-linkedin"></i>
+                        </a>
+                    </div> -->
+
+        </footer>
+
+    </main>
+
+
+    <!-- MIXITUP FILTER -->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+</body>
+
+</html>
