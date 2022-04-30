@@ -1,0 +1,612 @@
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author: Taylor Harris #
+#Date Created: 4/20/22 #
+#Version: 1 #
+#Date Last Modified: 4/28/22 #
+#Modified by: Taylor Harris #
+#Modification log:              #
+4/20/22 - Created site, sidebar, and home section.
+4/21/22 - Created about section.
+4/22/22 - Created portfolio section.
+4/23/22 - Added more to portfolio section.
+4/24/22 - Created contact and footer sections.
+4/25/22 - Added scrollbar, nav, and home animations.
+4/26/22 - Worked on mobile responsiveness, and fixing portfolio section up.
+4/27/22 - Worked on mobile responsiveness, fixed footer.
+4/28/22 - Touched up all mobile responsiveness for all elements.
+--
+------------------------------------------------------------------------------------------------------------------>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="assets/js/lib/fontawesome-all.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Portfolio - Taylor Harris</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/pinetree.png" alt="pine tree">
+</head>
+
+<body>
+    <!-- SIDEBAR -->
+    <div class="nav__toggle" id="nav-toggle">
+        <i class="uil uil-bars"></i>
+    </div>
+    <aside class="sidebar" id="sidebar">
+        <nav class="nav">
+            <div class="nav__logo">
+                <a href="Portfolio.html" class="nav__logo-text">TH</a>
+            </div>
+
+            <div class="nav__menu">
+                <div class="menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <!-- <li class="nav__item">
+                            <a href="#education" class="nav__link">Education</a>
+                        </li> -->
+                        <li class="nav__item">
+                            <a href="#work" class="nav__link">Portfolio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="btn__share">
+                <img class="icon" src="assets/images/pinetree.png"></a>
+                <!-- <i class="uil uil-share-alt social__share"></i> -->
+            </div>
+            <!-- <a class="navbar-brand" href="#page-hero"><img class="icon" src="assets/images/pinetree.png"></a> -->
+
+            <div class="nav__close" id="nav-close">
+                <i class="uil uil-times"></i>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+        <!-- HOME -->
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <div class="home__social">
+                    <span class="home__social-coding">Coding</span>
+                    <div class="home__social-links">
+                        <a href="https://github.com/TaylorAleseHarris/TaylorAleseHarris.github.io" target="_blank"
+                            class="home__social-link">
+                            <i class="uil uil-github"></i>
+                        </a>
+                        <a href="https://codesandbox.io/u/TaylorAleseHarris" target="_blank" class="home__social-link">
+                            <i class="uil uil-square"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/taylor-harris-530067233" target="_blank" class="home__social-link">
+                            <i class="uil uil-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <img src="assets/images/background.png" alt="Me" class="home__img">
+
+                <div class="home__data">
+                    <h1 class="home__title row line-1 anim-typewriter">Hi, I'm Taylor</h1>
+                    <h3 class="home__subtitle">1st Year Front-End Software Development Student</h3>
+                    <a href="#about" class="button">
+                        <i class="uil uil-user button__icon"></i>More About Me
+                    </a>
+                    <!-- <h3 class="home__subtitle row line-1 anim-typewriter">Welcome to my portfolio</h3> -->
+                </div>
+
+                <div class="my__info">
+                    <div class="info__item">
+                        <i class="uil uil-envelope-edit info__icon"></i>
+
+                        <div>
+                            <h3 class="info__title">Email</h3>
+                            <span class="info__subtitle">taylorharris2@my.cwi.edu</span>
+                        </div>
+                    </div>
+
+                    <div class="info__item">
+                        <i class="uil uil-facebook-messenger info__icon"></i>
+
+                        <div>
+                            <h3 class="info__title">Messenger</h3>
+                            <span class="info__subtitle">m.me/taylor.harris.1447</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ABOUT -->
+        <section class="about section" id="about">
+            <h2 data-heading="My Intro" class="section__title">About Me</h2>
+
+            <div class="about__container container grid">
+                <img class="about__img" src="assets/images/Me.png" alt="Me">
+
+                <div class="about__data">
+                    <h3 class="about__heading">Hi, I'm Taylor Harris, based in Idaho.</h3>
+                    <p class="about__description">I am currently enrolled in the Software Development program at
+                        College of Western Idaho.
+                        I originally went into this program without any specific end goals, I just knew I was
+                        interested in programming.
+                        Since learning what I have, though, I know now that I want to go into web development. I
+                        would like to design
+                        and build websites for other people. I am finishing up my first year, and plan
+                        to graduate in May of 2023.</p>
+                    <br>
+                    <section class="about__education">
+                        <div class="education">
+                            <br>
+                            <h3 class="about__heading text-center">Software Development AAS
+                            </h3>
+                            <p class="text-center">Expected May 2023
+                            </p>
+                            <p class="text-center">College of Western Idaho
+                            </p>
+                            <div class="about__icon">
+                                <img src="assets/images/iconmonstr-education-1-48.png" alt="Graduation Icon">
+                            </div>
+                            <h3 class="about__heading text-center">MTA Certified</h3>
+                            <p class="text-center">Expected May 2023
+                            </p>
+                        </div>
+                        <br>
+                        <div class="row text-center languages">
+                            <section class="col-md-4 my-3">
+                                <h3 class="about__heading">Proficient</h3>
+                                <p class="about__description">HTML</p>
+                                <p class="about__description">CSS</p>
+                                <p class="about__description">Bootstrap</p>
+                                <p class="about__description">Vue</p>
+                            </section>
+
+                            <section class="col-md-4 my-3">
+                                <h3 class="about__heading">Knowledgable</h3>
+                                <p class="about__description">JavaScript</p>
+                                <p class="about__description">JQuery</p>
+                                <p class="about__description">C#</p>
+                            </section>
+
+                            <section class="col-md-4 my-3">
+                                <h3 class="about__heading">Familiar</h3>
+                                <p class="about__description">Angular</p>
+                                <p class="about__description">React</p>
+                            </section>
+                        </div>
+                    </section>
+                    <br>
+                    <a href="#contact" class="button"><i class="uil uil-navigator button__icon"></i>Contact Me</a>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- PORTFOLIO -->
+        <section class="work section" id="work">
+            <h2 data-heading="Recent Work" class="section__title">Portfolio</h2>
+
+            <div class="work__filters">
+                <span class="work__item active-work" data-filter="all">All</span>
+                <span class="work__item" data-filter=".html">HTML</span>
+                <span class="work__item" data-filter=".vue">Vue</span>
+                <span class="work__item" data-filter=".angular">Angular</span>
+                <span class="work__item" data-filter=".react">React</span>
+                <span class="work__item" data-filter=".animation">Animation</span>
+            </div>
+
+            <div class="work__container container grid">
+
+                <div class="work__card mix vue">
+                    <img src="assets/images/project5.png" class="work__img" alt="Treasure Valley Grooming">
+                    <h3 class="work__title">Treasure Valley Grooming</h3>
+                    <span class="work__button">Info
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">Treasure Valley Grooming</h3>
+                        <p class="details__description">This is a site I created using routing in Vue.
+                        </p>
+                        <ul class="details__info">
+                            <li>Created - <span>March 2022</span></li>
+                            <li>Technologies - <span>Vue</span></li>
+                            <li>View - <span><a href="https://ibx3d7.csb.app/" target="_blank">Live Site</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work__card mix vue">
+                    <img src="assets/images/project4.png" class="work__img" alt="Pokemon Routing">
+                    <h3 class="work__title">Pokemon Routing</h3>
+                    <span class="work__button">Info
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">Pokemon Routing</h3>
+                        <p class="details__description">This is a site I created using routing in Vue.
+                            I created this following "30 Days of Vue".
+                        </p>
+                        <ul class="details__info">
+                            <li>Created - <span>March 2022</span></li>
+                            <li>Technologies - <span>Vue</span></li>
+                            <li>View - <span><a href="https://tvrh44.csb.app/" target="_blank">Live Site</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work__card mix html">
+                    <img src="assets/images/project6.png" class="work__img" alt="Star Aquarium">
+                    <h3 class="work__title">Star Aquarium</h3>
+                    <span class="work__button">Info
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">Star Aquarium</h3>
+                        <p class="details__description">This is a site I created using bootstrap in HTML.</p>
+                        <ul class="details__info">
+                            <li>Created - <span>March 2022</span></li>
+                            <li>Technologies - <span>HTML CSS</span></li>
+                            <li>View - <span><a href="https://tayloraleseharris.github.io/Project%203/StarAquarium.html"
+                                        target="_blank">Live Site</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work__card mix html">
+                    <img src="assets/images/project1.png" class="work__img" alt="Fungi Identifier">
+                    <h3 class="work__title">Fungi Identifier</h3>
+                    <span class="work__button">Info
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">Fungi Identifier</h3>
+                        <p class="details__description">This is a site I created in HTML. It is one of my favorite
+                            projects to date. It is a fungi identification website, run by Mushy. I created Mushy - 
+                            I drew him, named him, gave him his personality. This project was very customized, which
+                            is why it is so dear to my heart. I plan to take this project further in the future, and 
+                            I'm currently working on turning it into an app.
+                        </p>
+                        <ul class="details__info">
+                            <li>Created - <span>February 2022</span></li>
+                            <li>Technologies - <span>HTML CSS</span></li>
+                            <li>View - <span><a
+                                        href="https://tayloraleseharris.github.io/S2%20-%20Project%201%20-%20Week%205/Project%201/LandingPage.html"
+                                        target="_blank">Live Site</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work__card mix animation">
+                    <img src="assets/images/project2.png" class="work__img" alt="Mario Kart">
+                    <h3 class="work__title">Mario Kart</h3>
+                    <span class="work__button">Info
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">Mario Kart</h3>
+                        <p class="details__description">This is a site I created using HTML. This was my first project
+                            working with CSS animations.
+                        </p>
+                        <ul class="details__info">
+                            <li>Created - <span>December 2021</span></li>
+                            <li>Technologies - <span>Animation</span></li>
+                            <li>View - <span><a
+                                        href="https://tayloraleseharris.github.io/04-10Mario-Examples/index.html"
+                                        target="_blank">Live Site</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work__card mix html">
+                    <img src="assets/images/project3.png" class="work__img" alt="Taylor Alese Photography">
+                    <h3 class="work__title">Taylor Alese Photography</h3>
+                    <span class="work__button">Info
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">Taylor Alese Photography</h3>
+                        <p class="details__description">This was a redesign of my photography website. It was created from
+                            a bootstrap template, so all of the javascript work was done for me, I just added my own content
+                            and customized it. I hope someday I'll be able to create something this extravagent entirely on my
+                            own.
+                        </p>
+                        <ul class="details__info">
+                            <li>Created - <span>December 2021</span></li>
+                            <li>Technologies - <span>HTML CSS</span></li>
+                            <li>View - <span><a
+                                        href="https://tayloraleseharris.github.io/Portfolio%20Redesign/Home.html"
+                                        target="_blank">Live Site</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PORTFOLIO POPUPS -->
+        <div class="portfolio__popup">
+            <div class="portfolio__popup-inner">
+                <div class="portfolio__popup-content grid">
+                    <span class="portfolio__popup-close"><i class="uil uil-times"></i></span>
+                    <div class="pp__thumbnail">
+                        <img src="assets/images/iconmonstr-code-thin-240.png" alt="" class="portfolio__popup-img" alt="code icon">
+                    </div>
+                    <div class="portfolio__popup-info">
+                        <!-- <div class="portfolio__popup-subtitle">Featured - <span>Vue</span></div> -->
+                        <div class="portfolio__popup-body">
+                            <!-- <h3 class="details__title">Treasure Valley Grooming</h3>
+                            <p class="details__description">words words words words words words words words words words
+                                words words words words words words</p>
+                            <ul class="details__info">
+                                <li>Created - <span># Mo Year</span></li>
+                                <li>Technologies - <span>Vue</span></li>
+                                <li>View - <span><a href="#">Treasure Valley Grooming</a></span></li>
+                            </ul> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio__popup">
+            <div class="portfolio__popup-inner">
+                <div class="portfolio__popup-content grid">
+                    <span class="portfolio__popup-close"><i class="uil uil-times"></i></span>
+                    <div class="pp__thumbnail">
+                        <img src="assets/images/iconmonstr-code-thin-240.png" alt="" class="portfolio__popup-img" alt="code icon">
+                    </div>
+                    <div class="portfolio__popup-info">
+                        <!-- <div class="portfolio__popup-subtitle">Featured - <span>Vue</span></div> -->
+                        <div class="portfolio__popup-body">
+                            <!-- <h3 class="details__title">Pokemon Routing</h3>
+                            <p class="details__description">POKEMON LOVE BEAR</p>
+                            <ul class="details__info">
+                                <li>Created - <span># Mo Year</span></li>
+                                <li>Technologies - <span>Vue</span></li>
+                                <li>View - <span><a href="#">Pokemon Routing</a></span></li>
+                            </ul> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio__popup">
+            <div class="portfolio__popup-inner">
+                <div class="portfolio__popup-content grid">
+                    <span class="portfolio__popup-close"><i class="uil uil-times"></i></span>
+                    <div class="pp__thumbnail">
+                        <img src="assets/images/iconmonstr-code-thin-240.png" alt="" class="portfolio__popup-img" alt="code icon">
+                    </div>
+                    <div class="portfolio__popup-info">
+                        <!-- <div class="portfolio__popup-subtitle">Featured - <span>HTML</span></div> -->
+                        <div class="portfolio__popup-body">
+                            <!-- <h3 class="details__title">Star Aquarium</h3>
+                            <p class="details__description">words words words words words words words words words words
+                                words words words words words words</p>
+                            <ul class="details__info">
+                                <li>Created - <span># Mo Year</span></li>
+                                <li>Technologies - <span>HTML CSS</span></li>
+                                <li>View - <span><a href="#">Star Aquarium</a></span></li>
+                            </ul> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio__popup">
+            <div class="portfolio__popup-inner">
+                <div class="portfolio__popup-content grid">
+                    <span class="portfolio__popup-close"><i class="uil uil-times"></i></span>
+                    <div class="pp__thumbnail">
+                        <img src="assets/images/iconmonstr-code-thin-240.png" alt="" class="portfolio__popup-img" alt="code icon">
+                    </div>
+                    <div class="portfolio__popup-info">
+                        <!-- <div class="portfolio__popup-subtitle">Featured - <span>HTML</span></div> -->
+                        <div class="portfolio__popup-body">
+                            <!-- <h3 class="details__title">Fungi Identifier</h3>
+                            <p class="details__description">words words words words words words words words words words
+                                words words words words words words</p>
+                            <ul class="details__info">
+                                <li>Created - <span># Mo Year</span></li>
+                                <li>Technologies - <span>HTML CSS</span></li>
+                                <li>View - <span><a href="#">Fungi Identifier</a></span></li>
+                            </ul> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio__popup">
+            <div class="portfolio__popup-inner">
+                <div class="portfolio__popup-content grid">
+                    <span class="portfolio__popup-close"><i class="uil uil-times"></i></span>
+                    <div class="pp__thumbnail">
+                        <img src="assets/images/iconmonstr-code-thin-240.png" alt="" class="portfolio__popup-img" alt="code icon">
+                    </div>
+                    <div class="portfolio__popup-info">
+                        <!-- <div class="portfolio__popup-subtitle">Featured - <span>Animation</span></div> -->
+                        <div class="portfolio__popup-body">
+                            <!-- <h3 class="details__title">Mario Kart</h3>
+                            <p class="details__description">words words words words words words words words words words
+                                words words words words words words</p>
+                            <ul class="details__info">
+                                <li>Created - <span># Mo Year</span></li>
+                                <li>Technologies - <span>HTML CSS Animation</span></li>
+                                <li>View - <span><a href="#">Mario Kart</a></span></li>
+                            </ul> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio__popup">
+            <div class="portfolio__popup-inner">
+                <div class="portfolio__popup-content grid">
+                    <span class="portfolio__popup-close"><i class="uil uil-times"></i></span>
+                    <div class="pp__thumbnail">
+                        <img src="assets/images/iconmonstr-code-thin-240.png" alt="" class="portfolio__popup-img" alt="code icon">
+                    </div>
+                    <div class="portfolio__popup-info">
+                        <!-- <div class="portfolio__popup-subtitle">Featured - <span>HTML</span></div> -->
+                        <div class="portfolio__popup-body">
+                            <!-- <h3 class="details__title">Taylor Alese Photography</h3>
+                            <p class="details__description">words words words words words words words words words words
+                                words words words words words words</p>
+                            <ul class="details__info">
+                                <li>Created - <span># Mo Year</span></li>
+                                <li>Technologies - <span>HTML CSS</span></li>
+                                <li>View - <span><a href="#">Taylor Alese Photography</a></span></li>
+                            </ul> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT -->
+        <section class="contact section" id="contact">
+            <h2 data-heading="Get In Touch" class="section__title">Contact Me</h2>
+
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class="uil uil-envelope-edit contact__card-icon"></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">taylorharris2@my.cwi.edu</span>
+                            <span class="contact__button">
+                                Email me <i class="uil uil-arrow-right contact__button-icon"></i>
+                            </span>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class="uil uil-facebook-messenger contact__card-icon"></i>
+                            <h3 class="contact__card-title">Messenger</h3>
+                            <span class="contact__card-data">m.me/taylor.harris.1447</span>
+                            <span class="contact__button">
+                                Message me <i class="uil uil-arrow-right contact__button-icon"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <form action="" class="contact__form">
+                        <div class="input__container">
+                            <input type="text" class="input" id="name">
+                            <label for="">Name</label>
+                            <span>Name</span>
+                        </div>
+                        <div class="input__container">
+                            <input type="email" class="input" id="email_1">
+                            <label for="">Email</label>
+                            <span>Email</span>
+                        </div>
+                        <div class="input__container">
+                            <input type="email" class="input" id="email_2">
+                            <label for="">Confirm Email</label>
+                            <span>Confirm Email</span>
+                        </div>
+                        <div class="input__container">
+                            <input type="tel" class="input" id="phone">
+                            <label for="">Phone</label>
+                            <span>Phone</span>
+                        </div>
+                        <!-- <div class="input__container">
+                            <label for="">Preferred Contact Method</label><br>
+                            <input type="radio" class="radio">Email<br>
+                            <input type="radio" class="radio">Phone
+                        </div> -->
+                        <div class="input__container textarea">
+                            <textarea name="message" id="message" class="input"></textarea>
+                            <label for="">Message</label>
+                            <span>Message</span>
+                        </div>
+                        <button type="submit" class="button" id="submit"><i class="uil uil-navigator button__icon"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="bb__footer">
+            <div>
+                <h1 class="footer__title">Taylor Harris</h1>
+                <span class="footer__subtitle">1st Year Front-End Software Development Student</span>
+            </div>
+
+            <div>
+                <ul class="footer__links">
+                    <li>
+                        <a href="#home" class="footer__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="footer__link">About</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__socials">
+                <a href="https://github.com/TaylorAleseHarris/TaylorAleseHarris.github.io" target="_blank"
+                    class="footer__social">
+                    <i class="uil uil-github"></i>
+                </a>
+                <a href="https://codesandbox.io/u/TaylorAleseHarris" target="_blank" class="footer__social">
+                    <i class="uil uil-square"></i>
+                </a>
+                <a href="https://linkedin.com/in/taylor-harris-530067233" target="_blank" class="footer__social">
+                    <i class="uil uil-linkedin"></i>
+                </a>
+            </div>
+
+        </footer>
+
+    </main>
+
+    <!-- SCROLL UP -->
+
+    <!-- MIXITUP FILTER -->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!-- SWIPER JS -->
+    <!-- <script src=""></script> -->
+
+    <!-- MAIN JS -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- FORM JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="assets/js/form.js"></script>
+
+</body>
+
+</html>
