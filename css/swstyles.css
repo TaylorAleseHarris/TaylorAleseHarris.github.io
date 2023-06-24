@@ -1,0 +1,297 @@
+/*******************************
+Original Author: Taylor Harris 
+Date Created: 6/16/2023 
+Date Last Modified: 6/18/2023 
+Modified by: Taylor Harris 
+Modification log:              
+6/16/2023 - Created page. 
+6/18/2023 - Added and modified styling.
+*******************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.container {
+    max-width: 1500px;
+}
+
+.icon {
+    display: inline-block;
+    font-size: inherit;
+    overflow: visible;
+    vertical-align: -0.125;
+    text-rendering: auto;
+    fill: gray !important;
+    width: 50px;
+    height: 50px;
+    padding: 0.25em;
+}
+  
+.animated {
+    visibility: visible !important;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #404040;
+}
+
+.site-header {
+    background: url(../images/5.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.site-header .animated {
+    animation-delay: 2s;
+    animation-duration: 1s;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#fresh {
+    background-color: #eee;
+    text-decoration: none;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    font-size: large;
+    padding-top: 5px;
+}
+
+#fresh a {
+    color: black;
+    text-decoration: none;
+}
+
+#fresh:hover {
+    background-color: #ccc;
+    color: black;
+    text-decoration: none;
+}
+
+.fresh_active {
+    /* box-shadow: inset -3px -3px 7px white, 
+    inset 3px 3px 5px #444; */
+    box-shadow: inset 3px 3px 5px #444,
+        inset 80px 80px 80px rgb(45, 209, 255);
+    text-shadow: 1px 1px 3px white;
+}
+
+#salt {
+    background-color: #eee;
+    text-decoration: none;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-left: 1px;
+    font-size: large;
+    padding-top: 5px;
+}
+
+#salt a {
+    color: black;
+    text-decoration: none;
+}
+
+#salt:hover {
+    background-color: #ccc;
+    color: black;
+    text-decoration: none;
+}
+
+.salt_active {
+    /* box-shadow: inset -3px -3px 7px white, 
+    inset 3px 3px 5px #444; */
+    box-shadow: inset 3px 3px 5px #444,
+        inset 80px 80px 80px rgb(66, 144, 255);
+    text-shadow: 1px 1px 3px white;
+}
+
+.layout-text {
+    font-size: 1.1em;
+}
+
+.layout-text-special {
+    margin-top: -45px;
+}
+
+.layout-image {
+    max-width: 320px;
+}
+
+.site-nav.inbody {
+    background: #2a2c2e;
+}
+
+.inner-accordion {
+    background-color: black;
+    color: white;
+    padding-right: 0.75em;
+    padding-bottom: 0.25em;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 15%;
+}
+
+.inner-panel {
+    padding: 0 18px;
+    display: none;
+    text-transform: none;
+    font-size: 1.1em;
+}
+
+.inner-accordion:after {
+    content: "\02795";
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: black;
+    float: right;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.active2:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+.map {
+    width: 35% !important;
+}
+  
+@media screen and (max-width: 768px) {
+    .site-header .navbar-collapse {
+      background-color: rgba(0, 0, 0, 0.9);
+      padding: 10px;
+    }
+}
+
+.site-header .layout-hero {
+    min-height: 50vh;
+}
+
+.site-header .page-section-title {
+    font-size: 3em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+}
+
+.site-header .page-section-text {
+    font-size: 1.2em;
+}
+
+.page-section-text a {
+    color: #404040;
+    text-decoration: underline;
+}
+
+.page-section-text a:hover {
+    text-decoration-color: rgb(255, 204, 0);
+}
+
+.site-header .nav-link {
+    position: relative;
+    padding-bottom: 0;
+    margin-bottom: 2px;
+}
+
+.site-header .nav-link:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    max-width: 100px;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #ff9c07;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-out;
+}
+  
+.site-header .nav-link:hover:before {
+    visibility: visible;
+    left: 0;
+    transform: scaleX(1);
+}
+  
+.layout-swcycling .layout-image {
+    transition: all 0.3s ease-out;
+}
+  
+.layout-swcycling .layout-image:hover {
+    transform: scale(1.1) translateY(-3px);
+}
+  
+.page-section-header .page-section-title {
+    font-size: 4em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    color: black;
+}
+  
+.page-section-header .page-section-text {
+    font-size: 1.2em;
+    font-weight: 200;
+}
+
+#page-swcycling {
+    background: rgb(119, 176, 255);
+}
+
+#page-swaquascaping {
+    background: rgb(255, 194, 87);
+}
+
+#page-swstocking {
+    background: rgb(119, 176, 255);
+}
+
+#page-swmaintenance {
+    background: rgb(255, 194, 87);
+}
+  
+.layout-swstocking .layout-image {
+    background: #e3bef8;
+    height: 425px;
+    width: 425px;
+}
+  
+#page-floater {
+    background: #E1F7F5;
+}
+
+footer {
+    background-color: #35383a;
+}
+
+  
+@media screen and (min-width: 768px) {
+
+    #page-floater {
+      margin: 150px 0 150px 0;
+    }
+  
+    .layout-floater .layout-container {
+      position: relative;
+    }
+  
+    .layout-floater .layout-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(15deg)
+        scale(1.1);
+    }
+
+    .layout-swstocking {
+        margin: 0;
+    }
+}
