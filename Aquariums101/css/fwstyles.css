@@ -48,6 +48,22 @@ body {
     animation-duration: 1s;
 }
 
+.intro {
+    background: #cccccca8;
+    padding: 2em;
+    color: black;
+    margin-top: 90px; 
+    border-radius: 2em;
+}
+
+.intro-title {
+    font-size: 4em;
+}
+
+.intro-text {
+    font-size: 1.5em;
+}
+
 .buttons {
     display: flex;
     flex-direction: row;
