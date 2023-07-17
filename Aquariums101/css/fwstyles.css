@@ -7,6 +7,7 @@ Modification log:
 6/16/2023 - Created page. 
 6/17/2023 - Added and modified styling.
 6/18/2023 - Added and modified styling.
+7/01/2023 - Added and modified styling.
 *******************************/
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
@@ -26,7 +27,20 @@ Modification log:
     height: 50px;
     padding: 0.25em;
 }
-  
+
+.icon2 {
+    display: inline-block;
+    font-size: inherit;
+    overflow: visible;
+    text-rendering: auto;
+    /* fill: gray !important; */
+    width: 100px;
+    height: 100px;
+    padding: 0.25em;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
 .animated {
     visibility: visible !important;
 }
@@ -37,7 +51,7 @@ body {
 }
 
 .site-header {
-    background: url(../images/3.jpg);
+    background: url(../images/2.jpg);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,20 +62,35 @@ body {
     animation-duration: 1s;
 }
 
+.site-header {
+    min-height: 100vh;
+}
+
 .intro {
-    background: #cccccca8;
+    background: #cccccc7b;
     padding: 2em;
     color: black;
-    margin-top: 90px; 
+    margin-top: 120px;
     border-radius: 2em;
 }
 
 .intro-title {
     font-size: 4em;
+    margin-right: 50px;
+}
+
+.intro-subtitle {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    margin-top: -30px;
+    background: rgb(45, 209, 255);
+    padding: .15em;
 }
 
 .intro-text {
     font-size: 1.5em;
+    background: #cccccc97;
+    padding: .5em;
 }
 
 .buttons {
@@ -182,13 +211,6 @@ body {
 .map {
     width: 30% !important;
 }
-  
-@media screen and (max-width: 768px) {
-    .site-header .navbar-collapse {
-      background-color: rgba(0, 0, 0, 0.9);
-      padding: 10px;
-    }
-}
 
 .site-header .layout-hero {
     min-height: 50vh;
@@ -213,6 +235,15 @@ body {
     text-decoration-color: rgb(255, 204, 0);
 }
 
+.page-section-text #linkdecor a {
+    color: #404040;
+    text-decoration: underline;
+}
+
+.page-section-text #linkdecor a:hover {
+    text-decoration-color: rgb(255, 204, 0);
+}
+
 .site-header .nav-link {
     position: relative;
     padding-bottom: 0;
@@ -232,28 +263,28 @@ body {
     transform: scaleX(0);
     transition: all 0.3s ease-out;
 }
-  
+
 .site-header .nav-link:hover:before {
     visibility: visible;
     left: 0;
     transform: scaleX(1);
 }
-  
+
 .layout-fwcycling .layout-image {
     transition: all 0.3s ease-out;
 }
-  
+
 .layout-fwcycling .layout-image:hover {
     transform: scale(1.1) translateY(-3px);
 }
-  
+
 .page-section-header .page-section-title {
     font-size: 4em;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
     color: black;
 }
-  
+
 .page-section-header .page-section-text {
     font-size: 1.2em;
     font-weight: 200;
@@ -274,40 +305,112 @@ body {
 #page-fwmaintenance {
     background: rgb(255, 194, 87);
 }
-  
+
+#page-fwdonts {
+    background: rgb(121, 226, 255);
+}
+
 .layout-fwstocking .layout-image {
     background: #e3bef8;
     height: 425px;
     width: 425px;
 }
-  
+
 #page-floater {
     background: #E1F7F5;
+}
+
+#dont2 {
+    height: 330px;
+    width: 330px;
 }
 
 footer {
     background-color: #35383a;
 }
-  
+
 @media screen and (min-width: 768px) {
 
     #page-floater {
-      margin: 150px 0 150px 0;
+        margin: 150px 0 150px 0;
     }
-  
+
     .layout-floater .layout-container {
-      position: relative;
+        position: relative;
     }
-  
+
     .layout-floater .layout-image {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) rotate(15deg)
-        scale(1.1);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(15deg) scale(1.1);
     }
 
     .layout-fwstocking {
         margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .page-section-title {
+        font-size: 50px !important;
+    }
+
+    .site-header .navbar-collapse {
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 10px;
+    }
+
+    .icon2 {
+        width: 50px;
+        height: 50px;
+    }
+
+    .intro-title {
+        visibility: hidden;
+    }
+
+    .intro-subtitle {
+        visibility: hidden;
+    }
+
+    .intro-text {
+        width: 320px;
+        justify-content: center;
+        max-height: 50vh;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .intro {
+        width: 380px;
+        margin-left: 1px;
+        justify-content: center;
+        max-height: 86vh !important;
+    }
+
+    .navbar {
+        background-color: #292929;
+        margin-right: 17px;
+    }
+
+    .site-header {
+        max-height: 100vh;
+    }
+
+    #page-fwaquascaping {
+        padding-right: 20px;
+        padding-left: 20px;
+        max-width: 420px;
+    }
+
+    .page-section .page-section-text {
+        font-size: 1.25em;
+        color: rgb(20, 20, 20);
+    }
+
+    .row .layout-image {
+        margin-right: 20px;
     }
 }
