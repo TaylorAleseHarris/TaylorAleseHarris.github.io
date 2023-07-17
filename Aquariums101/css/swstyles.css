@@ -6,6 +6,7 @@ Modified by: Taylor Harris
 Modification log:              
 6/16/2023 - Created page. 
 6/18/2023 - Added and modified styling.
+7/01/2023 - Added and modified styling.
 *******************************/
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
@@ -25,6 +26,19 @@ Modification log:
     height: 50px;
     padding: 0.25em;
 }
+
+.icon2 {
+    display: inline-block;
+    font-size: inherit;
+    overflow: visible;
+    text-rendering: auto;
+    /* fill: gray !important; */
+    width: 100px;
+    height: 100px;
+    padding: 0.25em;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
   
 .animated {
     visibility: visible !important;
@@ -36,7 +50,7 @@ body {
 }
 
 .site-header {
-    background: url(../images/5.jpg);
+    background: url(../images/6.png);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,6 +59,37 @@ body {
 .site-header .animated {
     animation-delay: 2s;
     animation-duration: 1s;
+}
+
+.site-header {
+    max-height: 100vh;
+}
+
+.intro {
+    background: #cccccc7b;
+    padding: 2em;
+    color: black;
+    margin-top: 120px; 
+    border-radius: 2em;
+}
+
+.intro-title {
+    font-size: 4em;
+    margin-right: 50px;
+}
+
+.intro-subtitle {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    margin-top: -30px;
+    background: rgb(66, 144, 255);
+    padding: .15em;
+}
+
+.intro-text {
+    font-size: 1.5em;
+    background: #cccccc97;
+    padding: .5em;
 }
 
 .buttons {
