@@ -41,6 +41,23 @@ Modification log:
     margin-right: 20px;
 }
 
+.icon3 {
+    display: inline-block;
+    font-size: inherit;
+    overflow: visible;
+    text-rendering: auto;
+    /* fill: gray !important; */
+    width: 100px;
+    height: 100px;
+    padding: 0.25em;
+    margin-bottom: 20px;
+    /* margin-right: 20px; */
+}
+
+#italy {
+    margin-right: 50px;
+}
+
 .animated {
     visibility: visible !important;
 }
@@ -310,6 +327,10 @@ body {
     background: rgb(121, 226, 255);
 }
 
+#page-italy {
+    background: white;
+}
+
 .layout-fwstocking .layout-image {
     background: #e3bef8;
     height: 425px;
@@ -323,6 +344,18 @@ body {
 #dont2 {
     height: 330px;
     width: 330px;
+}
+
+#justify {
+    display: grid;
+    place-items: center;
+    text-align: left;
+}
+
+#outputLiters {
+    border: 0.25px solid rgba(0, 0, 0, 0.502);
+    padding: 5px;
+    border-radius: .125em;
 }
 
 footer {
