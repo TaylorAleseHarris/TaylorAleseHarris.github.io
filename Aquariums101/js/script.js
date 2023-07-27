@@ -6,7 +6,8 @@
 #Date Last Modified: 6/16/2023 #
 #Modified by: Taylor Harris #
 #Modification log:              #
-6/16/2023 - Created page. 
+6/16/2023 - Created page.
+7/20/2023 - Added gallons to liter conversion.
 ***
 ******************************************************************** */
 
@@ -118,3 +119,10 @@ $(document).ready(() =>
         active: false
     })
 )
+
+// GALLONS TO LITERS
+
+function VolumeConverter(valNum) {
+  let z = valNum*3.785411784;
+  document.getElementById("outputLiters").innerHTML=z.toFixed(3);
+}
