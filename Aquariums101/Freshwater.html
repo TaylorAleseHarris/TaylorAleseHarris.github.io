@@ -10,6 +10,7 @@ Modification log:
 6/29/2023 - Worked on intro to page.
 7/01/2023 - Modified content on page.
 7/05/2023 - Added plug in video.
+7/20/2023 - Added content to page.
 -------------------------------->
 
 <!doctype html>
@@ -56,6 +57,7 @@ Modification log:
                         <a class="nav-item nav-link" href="#page-fwstocking">Stocking</a>
                         <a class="nav-item nav-link" href="#page-fwmaintenance">Maintenance</a>
                         <a class="nav-item nav-link" href="#page-fwdonts">&#9888; Dont's</a>
+                        <a class="nav-item nav-link" href="#page-italy">Bit of Italy</a>
                     </div>
                 </section>
             </div>
@@ -689,6 +691,42 @@ Modification log:
                     </div>
                 </div>
             </section>
+        </section>
+    </article>
+
+    <!---------------------------------------------------------------------------------------------------------->
+
+    <article id="page-italy" class="page-section py-5">
+        <header class="page-section-header container text-center">
+            <h2 id="italy" class="page-section-title"><img class="icon3" src="images/italy.png">Bit of Italy</h2>
+            <p class="page-section-text">Italians, like many other cultures, use the Metric system rather than the SAE system we do in the
+                US. Something that is very common
+                in aquarium communities is to come across people referring to their aquarium's capacity in liters
+                rather than gallons. So here is a useful
+                gallons to liters conversion calculator for reference!
+            </p>
+            <hr>
+        </header>
+
+        <section class="layout-fwaquascaping container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 layout-animation invisible animated fadeInRight">
+
+                    <section class="fwaquascaping">
+                        <div class="fwaquascaping-body">
+                            <h4 class="layout-title text-center">Convert Gallons to Liters</h4>
+                            <div class="justify-content-center">
+                                <p class="layout-text">
+                                    <label>Gallons:</label>
+                                    <input id="inputGallons" type="number"
+                                        oninput="VolumeConverter(this.value)" onchange="VolumeConverter(this.value)">
+                                </p>
+                                <p class="layout-text">Liters: <span id="outputLiters"></span></p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
         </section>
     </article>
 
